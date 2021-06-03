@@ -1,0 +1,364 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+/* Main Container CSS */
+#main-container {
+  position: relative;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  background-color: #fff;
+  top: auto;
+}
+.landing-section {
+  position: relative;
+  width: 100%;
+  height: calc((100vw / 1.8) - 88px);
+  margin: auto;
+
+  background-color: white;
+  line-height: 1.5;
+}
+.standard-btn {
+  width: 10em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  border: 1px solid var(--standard-gold);
+  background-color: transparent;
+  margin: 1em 0;
+}
+.standard-icon {
+  width: 1.7em;
+  height: 1.7em;
+  margin: 0 0.7em;
+}
+.standard-social-icons {
+  @include flexCenter(row);
+  max-width: 250px;
+  margin: 1em;
+}
+h2 {
+  color: var(--standard-gold);
+}
+/* Reponsive Landing Slideshow */
+@media (max-width: 991.98px) {
+  .landing-section {
+    height: calc(100vw * 1.3);
+  }
+}
+@media all and (max-width: 768px) {
+  #main-container {
+    position: relative;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    top: 6vh;
+  }
+  .landing-section {
+    width: 100%;
+    margin: auto;
+    height: 94vh;
+    background-color: white;
+    border: 0;
+  }
+}
+@media all and (max-width: 425px) {
+  #main-container {
+    position: relative;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    top: 6vh;
+  }
+  .landing-section {
+    width: 100%;
+    margin: auto;
+    height: 90vh;
+    background-color: white;
+    border: 0;
+  }
+}
+/* Landing */
+.landing-container {
+  height: 100%;
+  position: relative;
+}
+.swiper-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  @include flexCenter(row);
+}
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: auto;
+  letter-spacing: 2px;
+}
+.swiper-slide-1-heading h1 {
+  margin: 0;
+}
+.swiper-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
+  background-size: cover;
+  & button {
+    color: white;
+  }
+}
+.swiper-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/pexels-thgusstavo-santana-2521978.jpg);
+  background-size: cover;
+  & button {
+    color: white;
+  }
+}
+.swiper-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/pexels-cottonbro-3992862.jpg);
+  background-size: cover;
+  & button {
+    color: white;
+  }
+}
+.swiper-slide-heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+@media all and (min-width: 1000px) {
+  .swiper-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .swiper-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/pexels-thgusstavo-santana-2521978.jpg);
+    background-size: cover;
+    background-position: 50% 45%;
+  }
+  .swiper-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/pexels-cottonbro-3992862.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+/* Intro Section */
+.intro-section {
+  width: 100%;
+  @include flexCenter(column);
+}
+.intro-container {
+  @include standardContainer;
+}
+.intro-heading {
+  @include standardHeading(auto);
+  line-height: 1.88;
+  & h2 {
+    letter-spacing: 4px;
+  }
+  & a {
+    color: var(--standard-gold);
+  }
+}
+.about-us-link {
+  @include flexCenter(row);
+  font-size: 1.1em;
+  & img {
+    width: 1em;
+    height: 1em;
+    margin: 0 0.5em;
+  }
+}
+.intro-main-img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+@media all and (max-width: 768px) {
+  .intro-main-img {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    border-radius: unset;
+  }
+  .intro-container {
+    padding: 0;
+  }
+  .shop-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 1em 0;
+    padding: 1em;
+  }
+  .intro-heading {
+    padding: 1em;
+  }
+}
+
+/* Services (home) Page  */
+.services-section {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/henry-co-a2VJlQ3yxmQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.services-container {
+  max-width: 1200px;
+  padding: 1em;
+  margin: auto;
+  & button {
+    color: #fff;
+  }
+}
+.services-heading {
+  @include standardHeading(10em);
+  color: #fff;
+  line-height: 1.88;
+  & h2 {
+    letter-spacing: 3px;
+  }
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.service {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  margin-bottom: 2em;
+  min-width: 300px;
+  max-width: 500px;
+  color: #f5f3f4;
+}
+.service-icon {
+  width: 3em;
+  margin-right: 0.5em;
+}
+.service-topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+.service-price {
+  color: var(--standard-gold);
+}
+@media all and (max-width: 1044px) {
+  .services-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 1440px) {
+  .services-section {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(/images/henry-co-a2VJlQ3yxmQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+/* Testemonials Section */
+.test-section {
+  width: 100%;
+
+  .test-container {
+    @include standardContainer;
+  }
+  .test-heading {
+    @include standardHeading(auto);
+    & h2 {
+      letter-spacing: 3px;
+    }
+  }
+  .test-swiper-container {
+    font-size: inherit;
+    padding: 0;
+  }
+  .test {
+    @include flexCenter(column);
+    justify-content: space-around;
+    text-align: center;
+    line-height: 1.88;
+    height: 100%;
+  }
+  .test-context {
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+  }
+  .test-person {
+    margin: 2em;
+  }
+  .test-img {
+    width: 4em;
+    border-radius: 50%;
+  }
+}
+/* Products Section */
+.products-section {
+  width: 100%;
+  background-color: #fafafa;
+  .products-container {
+    @include standardContainer;
+    @include flexCenter(column);
+  }
+  .products-heading {
+    @include standardHeading(auto);
+    & h2,
+    p {
+      letter-spacing: 3px;
+      line-height: 1.88;
+    }
+  }
+}
+@media all and (max-width: 1024px) {
+  .products-section {
+    width: 100%;
+
+    .products-container {
+      @include standardContainer;
+      @include flexCenter(column);
+    }
+    .products-heading {
+      @include standardHeading(auto);
+      & h2,
+      p {
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
