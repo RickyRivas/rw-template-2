@@ -257,7 +257,7 @@ nav {
 }
 
 /* media queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body {
     display: block;
     overflow-x: hidden;
