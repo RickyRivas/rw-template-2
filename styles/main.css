@@ -433,6 +433,11 @@ nav {
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.standard-icon {
+  width: 2em;
+  height: 2em;
+}
+
 h2 {
   color: var(--standard-gold);
 }
@@ -558,12 +563,15 @@ h2 {
 }
 
 .intro-container {
+  max-width: 1200px;
+  margin: auto;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -571,5 +579,65 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.intro-heading {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.intro-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+}
+
+.intro-li-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 1.3em;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+.intro-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em 0;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1em 0.5em;
+  width: 100%;
+  max-width: 400px;
 }
 /*# sourceMappingURL=main.css.map */
