@@ -7,9 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --primary-color: rgba(0, 0, 0, 0.1);
-}
 
 /* Navigation Scss */
 body {
@@ -24,7 +21,7 @@ nav {
   width: 100vw;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  background-color: $navColor;
+  background-color: transparent;
 }
 .nav-links {
   display: flex;
@@ -46,14 +43,13 @@ nav {
   color: $navColor;
 }
 
-.hamburger.hamburger--spin {
+.hamburger.hamburger--spring {
   display: none;
 }
 .logo {
   width: auto;
   margin: 1em;
-  font-size: 1.7em;
-
+  font-size: 1.2em;
   & a {
     color: $navColor;
     text-decoration: none;
@@ -174,7 +170,7 @@ nav {
     display: block;
     overflow-x: hidden;
   }
-  .hamburger.hamburger--spin {
+  .hamburger.hamburger--spring {
     display: block;
   }
   nav {
@@ -187,7 +183,7 @@ nav {
     background-color: transparent;
     box-shadow: none;
     border: 0;
-    height: 8vh;
+    height: 6vh;
     padding: 0.5em;
   }
   .nav-links {
@@ -223,16 +219,10 @@ nav {
     text-decoration: none;
   }
   .logo {
-    position: absolute;
-    top: 0;
     z-index: 100;
     font-weight: 100;
     margin: 0;
     width: auto;
-    & img {
-      position: relative;
-      width: 5em;
-    }
   }
   .is-active {
     transform: translateX(0%);
