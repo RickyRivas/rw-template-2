@@ -114,3 +114,16 @@ h2 {
     border: 0;
   }
 }
+/* Intro Container */
+.intro-section {
+  width: 100;
+}
+.intro-container {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.intro-heading {
+}
