@@ -420,37 +420,13 @@ nav {
 .standard-btn {
   width: 10em;
   padding: 1em;
+  border-radius: 0.5em;
   text-align: center;
-  border-radius: 1em;
   border: none;
   outline: none;
   border: 1px solid var(--standard-gold);
   background-color: transparent;
   margin: 1em 0;
-}
-
-.standard-icon {
-  width: 1.7em;
-  height: 1.7em;
-  margin: 0 0.7em;
-}
-
-.standard-social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-width: 250px;
-  margin: 1em;
 }
 
 h2 {
@@ -502,11 +478,6 @@ h2 {
   }
 }
 
-.standard-btn {
-  border: 1px solid #000;
-  color: #000;
-}
-
 /* Landing */
 .landing-section {
   width: 100%;
@@ -519,6 +490,8 @@ h2 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/sarah-dorweiler-7tFlUFGa7Dk-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  text-align: center;
+  font-size: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,5 +505,10 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.landing-container button {
+  border: 1px solid #000;
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */
