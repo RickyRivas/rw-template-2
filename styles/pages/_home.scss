@@ -81,6 +81,7 @@ h2 {
   width: 100%;
 }
 .landing-container {
+  padding: 0.5em;
   height: 100%;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
@@ -88,10 +89,11 @@ h2 {
   background-size: cover;
   background-position: center;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 0.7em;
   @include flexCenter(column);
+  color: $navColor;
   & button {
-    border: 1px solid #000;
-    color: #000;
+    border: 1px solid $navColor;
+    color: $navColor;
   }
 }
