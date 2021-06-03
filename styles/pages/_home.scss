@@ -136,6 +136,9 @@ h2 {
 .intro-heading {
   text-align: center;
   line-height: 1.5;
+  & h2 {
+    color: $manatee;
+  }
 }
 .intro-list {
   display: flex;
@@ -151,7 +154,7 @@ h2 {
   align-items: center;
   width: 100%;
   font-size: 1.3em;
-  color: #000;
+  color: $manatee;
   margin-bottom: 0.5em;
 }
 .intro-li {
@@ -163,5 +166,37 @@ h2 {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 1em 0.5em;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
+  flex: 1 1 auto;
+}
+@media all and (min-width: 900px) {
+  .intro-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: unset;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    max-width: 900px;
+  }
+  .intro-li-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3em;
+    color: $manatee;
+    margin-bottom: 0.5em;
+  }
+  .intro-li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1em 0.5em;
+    width: 100%;
+    max-width: 400px;
+  }
 }
