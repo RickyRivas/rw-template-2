@@ -2,81 +2,69 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Navigation Scss */
+body {
+  background-color: #fff;
+}
 nav {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
-  height: 8vh;
+  height: 6vh;
   width: 100vw;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  background-color: #fff;
-  overflow: hidden;
-  letter-spacing: 4px;
-  z-index: 1000;
+  background-color: $navColor;
 }
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 55vw;
+  width: 50vw;
   margin: 1em;
-  background-color: #fff;
 }
 .nav-links li {
   list-style: none;
   padding: 5px;
-  margin: 0 0.5em;
-  font-weight: 200;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
 }
 .nav-links a {
   text-decoration: none;
   color: $navColor;
 }
-.nav-links a:hover {
-  color: var(--standard-gold);
-  font-size: 1.1em;
-}
+
 .hamburger.hamburger--spin {
   display: none;
 }
 .logo {
-  width: 3em;
-  margin: 0;
+  width: auto;
+  margin: 1em;
   font-size: 1.7em;
-  color: $navColor;
+
   & a {
     color: $navColor;
     text-decoration: none;
   }
 }
-.book-btn {
-  cursor: pointer;
-  outline: none;
-  margin: 1em 0;
-  font-size: 14px;
-  border: none;
-  color: #000;
-  width: 6em;
-  height: 2em;
-  border-radius: 0;
-  background: #fff;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 14px 28px,
-    rgba(0, 0, 0, 0.15) 0px 10px 10px;
-}
-.links-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-btn {
+.social-media-icons {
   display: none;
 }
 .nav-menu-logo {
   display: none;
+  color: #fff;
 }
 .nav-icon {
   display: none;
@@ -103,11 +91,12 @@ nav {
 }
 .hamburger.is-active:hover {
   opacity: 0.7;
+  border: none;
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: $navColor;
+  background-color: #000;
 }
 
 .hamburger-box {
@@ -126,8 +115,8 @@ nav {
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 40px;
-  height: 2px;
-  background-color: $navColor;
+  height: 3px;
+  background-color: #000;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -145,37 +134,42 @@ nav {
 .hamburger-inner::after {
   bottom: -10px;
 }
-/* Spin */
-.hamburger--spin .hamburger-inner {
-  transition-duration: 0.22s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+/*
+   * Spring
+   */
+.hamburger--spring .hamburger-inner {
+  top: 2px;
+  transition: background-color 0s 0.13s linear;
 }
-.hamburger--spin .hamburger-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+.hamburger--spring .hamburger-inner::before {
+  top: 10px;
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+    transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-.hamburger--spin .hamburger-inner::after {
-  transition: bottom 0.1s 0.25s ease-in,
-    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+.hamburger--spring .hamburger-inner::after {
+  top: 20px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+    transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.hamburger--spin.is-active .hamburger-inner {
-  transform: rotate(225deg);
-  transition-delay: 0.12s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+.hamburger--spring.is-active .hamburger-inner {
+  transition-delay: 0.22s;
+  background-color: transparent !important;
 }
-.hamburger--spin.is-active .hamburger-inner::before {
+.hamburger--spring.is-active .hamburger-inner::before {
   top: 0;
-  opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+    transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-.hamburger--spin.is-active .hamburger-inner::after {
-  bottom: 0;
-  transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out,
-    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+.hamburger--spring.is-active .hamburger-inner::after {
+  top: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+    transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(-45deg);
 }
 /* media queries */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   body {
     display: block;
     overflow-x: hidden;
@@ -185,19 +179,16 @@ nav {
   }
   nav {
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: transparent;
+    box-shadow: none;
     border: 0;
-    height: 6.5vh;
-    padding: 0;
-    overflow: hidden;
-    padding: 1em;
+    height: 8vh;
+    padding: 0.5em;
   }
   .nav-links {
     margin: 0;
@@ -205,56 +196,46 @@ nav {
     z-index: 0;
     width: 60%;
     right: 0px;
-    height: 94vh;
-    padding: 1em;
-    top: 6vh;
+    height: 100vh;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: $platinum;
   }
   .nav-links li {
     opacity: 0;
-    padding: 1em;
-
-    text-align: center;
-    color: #fff;
+    padding: 0.5em 2em;
+    font-size: 1.1em;
+    text-align: left;
+    color: black;
+    margin: 0.3em;
     width: 100%;
-    margin-bottom: 0.5em;
+    border-bottom: 1px solid $navColor;
   }
   .nav-links li:nth-child(1) {
-    border-right: 5px solid $palePink;
+    margin-top: 3em;
   }
-  .logo img {
+  .nav-links li:hover {
+    text-decoration: none;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    font-weight: 100;
     margin: 0;
-    width: 12vw;
+    width: auto;
+    & img {
+      position: relative;
+      width: 5em;
+    }
   }
   .is-active {
     transform: translateX(0%);
-  }
-
-  .nav-icon {
-    display: block;
-    width: 2em;
-    height: 2em;
-  }
-  .nav-btn {
-    display: block;
-    max-width: 8em;
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
   }
   .nav-menu-logo {
     position: absolute;
@@ -266,70 +247,19 @@ nav {
     color: #fff;
     margin: auto;
   }
-  .nav-icon {
-    display: block;
-    width: 2em;
-    height: 2em;
-  }
-}
-@media screen and (max-width: 425px) {
-  body {
-    display: block;
-    overflow-x: hidden;
-  }
-  .hamburger.hamburger--spin {
-    display: block;
-  }
-  nav {
-    position: fixed;
-    z-index: 100;
-    width: 100vw;
+  .social-media-icons {
+    position: absolute;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
+    bottom: 4em;
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    border: 0;
-
-    padding: 0.6em;
-    overflow: hidden;
-  }
-  .nav-links {
-    margin: 0;
-    position: fixed;
-    z-index: 0;
-    width: 60%;
-    right: 0px;
-    height: 94vh;
     padding: 1em;
-    top: 6vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-      rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  }
-  .nav-links li {
-    opacity: 0;
-    padding: 0.8em 1.5em;
-    color: #fff;
-  }
-
-  .logo {
-    margin: 0;
-    width: 16vw;
-    color: #fff;
-  }
-  .is-active {
-    transform: translateX(0%);
   }
   .nav-icon {
     display: block;
     width: 2em;
-    height: 2em;
   }
   @keyframes navLinkFade {
     from {
