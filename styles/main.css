@@ -406,6 +406,89 @@ nav {
   }
 }
 
+.quote-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+.quote-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  background: #f1f1f1;
+  margin: auto;
+  max-width: 1200px;
+      grid-template-areas: "img box";
+}
+
+.quote-card button {
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.quote-card img {
+  max-height: 400px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+.quote-card > div {
+  padding: 0.5em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: box;
+  height: 400px;
+}
+
+.quote-card:nth-child(even) img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (max-width: 768px) {
+  .quote-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0;
+    background: #f1f1f1;
+    margin: auto;
+    max-width: 500px;
+        grid-template-areas: "img" "box";
+  }
+}
+
 /* Main Container CSS */
 #main-container {
   position: relative;
@@ -565,7 +648,6 @@ h2 {
 /* Intro Container */
 .intro-section {
   width: 100;
-  background-color: #fffbff;
 }
 
 .intro-container {
