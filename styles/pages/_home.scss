@@ -22,14 +22,14 @@
 .standard-btn {
   width: 10em;
   padding: 1em;
-  border-radius: 0.5em;
+  border-radius: 2em;
   text-align: center;
-  border: none;
+  border: 1px solid #fff;
   cursor: pointer;
   outline: none;
-  border: 1px solid var(--standard-gold);
   background-color: transparent;
   margin: 1em 0;
+  color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .standard-icon {
@@ -49,18 +49,15 @@ h2 {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
-  border-bottom: 1px solid $navColor;
   background-size: cover;
   background-position: 50% 70%;
   text-align: center;
   font-size: 0.7em;
+  background-size: 110% 110%;
+  background-position: center center;
+  animation: shrink 10s infinite alternate;
   @include flexCenter(column);
   color: #fff;
-  & button {
-    border: 1px solid #fff;
-    color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
 }
 @media (max-width: 991.98px) {
   .landing-section {
@@ -101,9 +98,8 @@ h2 {
     background-position: center center;
     animation: shrink 10s infinite alternate;
     & button {
-      border: 1px solid $navColor;
       color: $navColor;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border: 1px solid $navColor;
     }
   }
 }
@@ -140,7 +136,7 @@ h2 {
   text-align: center;
   line-height: 1.5;
   & h2 {
-    color: $manatee;
+    color: $navColor;
   }
 }
 .intro-list {
@@ -157,7 +153,7 @@ h2 {
   align-items: center;
   width: 100%;
   font-size: 1.3em;
-  color: $manatee;
+  color: $navColor;
   margin-bottom: 0.5em;
   & p {
     margin: 0 0.5em;
@@ -169,11 +165,15 @@ h2 {
   align-items: center;
   flex-direction: column;
   margin: 1em 0;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   padding: 1em 0.5em;
   width: 100%;
   max-width: 450px;
   flex: 1 1 auto;
+}
+.intro-li:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 @media all and (min-width: 900px) {
   .intro-list {
@@ -191,7 +191,7 @@ h2 {
     align-items: center;
     width: 100%;
     font-size: 1.3em;
-    color: $manatee;
+    color: $navColor;
     margin-bottom: 0.5em;
   }
   .intro-li {
@@ -200,7 +200,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     margin: 1em 0;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
     padding: 1em 0.5em;
     width: 100%;
     max-width: 400px;

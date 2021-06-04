@@ -13,7 +13,8 @@ body {
   background-color: #fff;
 }
 nav {
-  position: relative;
+  z-index: 1000;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +41,7 @@ nav {
 }
 .nav-links a {
   text-decoration: none;
-  color: $navColor;
+  color: #fff;
 }
 
 .hamburger.hamburger--spring {
@@ -51,7 +52,7 @@ nav {
   margin: 1em;
   font-size: 1.2em;
   font-weight: 100;
-  color: $navColor;
+  color: #fff;
   & a {
     color: $navColor;
     text-decoration: none;
@@ -215,6 +216,9 @@ nav {
     width: 100%;
     border-bottom: 1px solid $navColor;
   }
+  .nav-links li a {
+    color: $navColor;
+  }
   .nav-links li:nth-child(1) {
     margin-top: 3em;
   }
@@ -226,6 +230,7 @@ nav {
     font-weight: 100;
     margin: 0;
     width: auto;
+    color: $navColor;
   }
   .is-active {
     transform: translateX(0%);

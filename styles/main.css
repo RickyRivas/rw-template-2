@@ -46,7 +46,8 @@ body {
 }
 
 nav {
-  position: relative;
+  z-index: 1000;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +89,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 
 .hamburger.hamburger--spring {
@@ -100,7 +101,7 @@ nav {
   margin: 1em;
   font-size: 1.2em;
   font-weight: 100;
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 
 .logo a {
@@ -324,6 +325,9 @@ nav {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   }
+  .nav-links li a {
+    color: rgba(0, 0, 0, 0.7);
+  }
   .nav-links li:nth-child(1) {
     margin-top: 3em;
   }
@@ -335,6 +339,7 @@ nav {
     font-weight: 100;
     margin: 0;
     width: auto;
+    color: rgba(0, 0, 0, 0.7);
   }
   .is-active {
     -webkit-transform: translateX(0%);
@@ -423,14 +428,14 @@ nav {
 .standard-btn {
   width: 10em;
   padding: 1em;
-  border-radius: 0.5em;
+  border-radius: 2em;
   text-align: center;
-  border: none;
+  border: 1px solid #fff;
   cursor: pointer;
   outline: none;
-  border: 1px solid var(--standard-gold);
   background-color: transparent;
   margin: 1em 0;
+  color: #fff;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -455,11 +460,14 @@ h2 {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   background-size: cover;
   background-position: 50% 70%;
   text-align: center;
   font-size: 0.7em;
+  background-size: 110% 110%;
+  background-position: center center;
+  -webkit-animation: shrink 10s infinite alternate;
+          animation: shrink 10s infinite alternate;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,13 +482,6 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #fff;
-}
-
-.landing-container button {
-  border: 1px solid #fff;
-  color: #fff;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 @media (max-width: 991.98px) {
@@ -537,10 +538,8 @@ h2 {
             animation: shrink 10s infinite alternate;
   }
   .landing-container button {
-    border: 1px solid rgba(0, 0, 0, 0.7);
     color: rgba(0, 0, 0, 0.7);
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
   }
 }
 
@@ -594,7 +593,7 @@ h2 {
 }
 
 .intro-heading h2 {
-  color: #9599b0;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .intro-list {
@@ -625,7 +624,7 @@ h2 {
           align-items: center;
   width: 100%;
   font-size: 1.3em;
-  color: #9599b0;
+  color: rgba(0, 0, 0, 0.7);
   margin-bottom: 0.5em;
 }
 
@@ -648,14 +647,19 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 1em 0;
-  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   padding: 1em 0.5em;
   width: 100%;
   max-width: 450px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.intro-li:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 @media all and (min-width: 900px) {
@@ -686,7 +690,7 @@ h2 {
             align-items: center;
     width: 100%;
     font-size: 1.3em;
-    color: #9599b0;
+    color: rgba(0, 0, 0, 0.7);
     margin-bottom: 0.5em;
   }
   .intro-li {
@@ -704,8 +708,6 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 1em 0;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 1em 0.5em;
     width: 100%;
     max-width: 400px;
