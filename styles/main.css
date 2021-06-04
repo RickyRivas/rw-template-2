@@ -492,6 +492,15 @@ nav {
   }
 }
 
+.business-info-section {
+  width: 100%;
+}
+
+.business-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Main Container CSS */
 #main-container {
   position: relative;
@@ -649,6 +658,7 @@ h2 {
 /* Intro Container */
 .intro-section {
   width: 100;
+  background-color: #f1f1f1;
 }
 
 .intro-container {
