@@ -784,6 +784,11 @@ h2 {
           flex: 1 1 auto;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service:nth-child(1),
+.service:nth-child(2),
+.service:nth-child(3) {
   margin-bottom: 1em;
 }
 
