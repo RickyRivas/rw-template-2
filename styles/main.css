@@ -420,8 +420,11 @@ nav {
   padding: 1em;
 }
 
-img {
+.img {
   width: 100%;
+  background: url(/images/modern-living-room-interior-scandinavian-style-3d-illustration-living-room-mockup.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .quote-card {
@@ -441,7 +444,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.7);
 }
 
-.quote-card img {
+.quote-card .img {
   max-height: 400px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
