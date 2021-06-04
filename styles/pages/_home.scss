@@ -86,7 +86,7 @@ h2 {
     height: 100%;
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(/images/sarah-dorweiler-7tFlUFGa7Dk-unsplash.jpg);
+      url(/images/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -96,7 +96,7 @@ h2 {
     border-bottom: 0;
     background-size: 110% 110%;
     background-position: center center;
-    animation: shrink 10s infinite alternate;
+    animation: shrink 5s infinite alternate;
     & button {
       color: $navColor;
       border: 1px solid $navColor;
