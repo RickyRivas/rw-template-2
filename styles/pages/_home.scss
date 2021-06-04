@@ -205,14 +205,19 @@ h2 {
   width: 2em;
 }
 @media all and (min-width: 1000px) {
-  .service {
+  .services-container {
+    padding-bottom: 2em;
+  }
+  .services-heading {
+    padding-top: 1em;
+  }
+  .service-grid {
     width: 100%;
-    width: 500px;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    flex: 1 1 auto;
+  }
+  .service {
+    max-width: 275px;
+    height: 250px;
   }
 }
 /* Business Info Container */

@@ -19,6 +19,7 @@
   margin: auto;
   max-width: 1200px;
   grid-template-areas: "img box";
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   & button {
     color: $navColor;
     border: 1px solid $navColor;
@@ -76,6 +77,7 @@
   margin: auto;
   max-width: 1200px;
   grid-template-areas: "box img";
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   & button {
     color: $navColor;
     border: 1px solid $navColor;
