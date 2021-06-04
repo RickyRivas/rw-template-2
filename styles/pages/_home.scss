@@ -133,6 +133,7 @@ h2 {
 }
 .services-heading {
   text-align: center;
+  padding-bottom: 1em;
 }
 .services-grid {
   width: 100%;
@@ -149,6 +150,8 @@ h2 {
   align-items: center;
   flex-direction: column;
   flex: 1 1 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 1em;
 }
 
 .s1 {
@@ -189,7 +192,7 @@ h2 {
 }
 .s-content {
   grid-area: content;
-  padding: 1em;
+  padding: 0.5em;
   display: flex;
   align-items: center;
   font-size: 1.1em;
@@ -200,6 +203,17 @@ h2 {
 }
 .service-icon {
   width: 2em;
+}
+@media all and (min-width: 1000px) {
+  .service {
+    width: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
 }
 /* Business Info Container */
 .business-info-section {
