@@ -728,5 +728,124 @@ h2 {
   }
 }
 
+/* Services */
+.services-section {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+}
+
+.services-heading {
+  text-align: center;
+}
+
+.services-grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service {
+  width: 100%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.s1 {
+  margin: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  background: url(/images/leather-sofa-wooden-table-living-room-interior-with-plant-concrete-wall-tv-3d-rendering.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  width: 100%;
+}
+
+.s2 {
+  margin: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  background: url(/images/front-view-white-basket-with-towels.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  width: 100%;
+}
+
+.s3 {
+  margin: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  background: url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  width: 100%;
+}
+
+.s4 {
+  margin: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  background: url(/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  width: 100%;
+}
+
+.s-content {
+  grid-area: content;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.s-content p {
+  margin: 0 1em;
+}
+
+.service-icon {
+  width: 2em;
+}
+
 /* Business Info Container */
 /*# sourceMappingURL=main.css.map */
