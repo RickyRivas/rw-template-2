@@ -59,8 +59,6 @@ nav {
           align-items: center;
   height: 6vh;
   width: 100vw;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   background-color: transparent;
 }
 
@@ -81,6 +79,10 @@ nav {
 .nav-links li {
   list-style: none;
   padding: 5px;
+}
+
+.nav-links li:nth-child(1) {
+  border-bottom: 1px solid #fff;
 }
 
 .nav-links li:hover {
@@ -552,8 +554,8 @@ h2 {
   padding: 0.5em;
   height: 100%;
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
   background-size: cover;
   background-position: 50% 70%;
   text-align: center;
