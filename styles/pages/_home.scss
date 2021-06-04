@@ -48,17 +48,17 @@ h2 {
   height: 100%;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(/images/sarah-dorweiler-7tFlUFGa7Dk-unsplash.jpg);
+    url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
   border-bottom: 1px solid $navColor;
   background-size: cover;
   background-position: 50% 70%;
   text-align: center;
   font-size: 0.7em;
   @include flexCenter(column);
-  color: $navColor;
+  color: #fff;
   & button {
-    border: 1px solid $navColor;
-    color: $navColor;
+    border: 1px solid #fff;
+    color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 }
@@ -97,6 +97,9 @@ h2 {
     @include flexCenter(column);
     color: $navColor;
     border-bottom: 0;
+    background-size: 110% 110%;
+    background-position: center center;
+    animation: shrink 10s infinite alternate;
     & button {
       border: 1px solid $navColor;
       color: $navColor;
@@ -156,6 +159,9 @@ h2 {
   font-size: 1.3em;
   color: $manatee;
   margin-bottom: 0.5em;
+  & p {
+    margin: 0 0.5em;
+  }
 }
 .intro-li {
   display: flex;
@@ -198,5 +204,13 @@ h2 {
     padding: 1em 0.5em;
     width: 100%;
     max-width: 400px;
+  }
+}
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
   }
 }
