@@ -620,8 +620,6 @@ h2 {
     border-bottom: 0;
     background-size: 110% 110%;
     background-position: center center;
-    -webkit-animation: shrink 5s infinite alternate;
-            animation: shrink 5s infinite alternate;
   }
   .landing-container button {
     color: rgba(0, 0, 0, 0.7);
@@ -798,24 +796,6 @@ h2 {
     padding: 1em 0.5em;
     width: 100%;
     max-width: 400px;
-  }
-}
-
-@-webkit-keyframes shrink {
-  0% {
-    background-size: 110% 110%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
-}
-
-@keyframes shrink {
-  0% {
-    background-size: 110% 110%;
-  }
-  100% {
-    background-size: 100% 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
