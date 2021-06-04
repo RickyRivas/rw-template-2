@@ -565,6 +565,7 @@ h2 {
 /* Intro Container */
 .intro-section {
   width: 100;
+  background-color: #fffbff;
 }
 
 .intro-container {
@@ -655,6 +656,7 @@ h2 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  background-color: #fff;
 }
 
 .intro-li:hover {
