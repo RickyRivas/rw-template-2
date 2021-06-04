@@ -54,3 +54,57 @@
       "img";
   }
 }
+/* why */
+.why-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.why-img {
+  width: 100%;
+  background: url(/images/sven-brandsma-GZ5cKOgeIB0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.why-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  background: #f1f1f1;
+  margin: auto;
+  max-width: 1200px;
+  grid-template-areas: "box img";
+  & button {
+    color: $navColor;
+    border: 1px solid $navColor;
+  }
+}
+.why-card .why-img {
+  max-height: 400px;
+  grid-area: img;
+}
+.why-card > div {
+  padding: 0.5em;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  grid-area: box;
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .why-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    background: #f1f1f1;
+    margin: auto;
+    max-width: 500px;
+    grid-template-areas:
+      "box"
+      "img";
+  }
+}
