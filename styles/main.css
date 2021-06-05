@@ -454,7 +454,7 @@ nav {
 .quote-card .img {
   max-height: 400px;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: img;
 }
 
@@ -474,7 +474,7 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: box;
   height: 400px;
 }
@@ -543,7 +543,7 @@ nav {
 .why-card .why-img {
   max-height: 400px;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: img;
 }
 
@@ -563,7 +563,7 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: box;
   height: 400px;
 }
@@ -584,22 +584,189 @@ nav {
 
 /* Business Info Container */
 .business-info-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #f1f1f1;
   margin: auto;
   max-width: 1200px;
-      grid-template-areas: "img box";
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      grid-template-areas: "form info";
 }
 
 .business-info-container button {
   color: rgba(0, 0, 0, 0.7);
   border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+#contact {
+  padding: 1em;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 1em;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
+  padding: 1em;
+  border-radius: 2em;
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.contact-form-heading {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+.flex-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.business-phone,
+.business-email,
+.business-hrs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+.business-phone p,
+.business-email p,
+.business-hrs p {
+  margin: 0 1em;
+}
+
+.business-phone span,
+.business-email span,
+.business-hrs span {
+  color: #e0afa0;
+  margin: 0 0.5em;
+}
+
+.business-phone .hrs-list,
+.business-email .hrs-list,
+.business-hrs .hrs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.business-phone .hrs-headings,
+.business-email .hrs-headings,
+.business-hrs .hrs-headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.business-hrs {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media all and (max-width: 768px) {
+  .business-info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f1f1f1;
+    margin: auto;
+    max-width: 1200px;
+        grid-template-areas: "form info";
+  }
+  .business-info-container button {
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+  .form {
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    border: 0;
+    outline: none;
+  }
 }
 
 .top-link {
@@ -893,7 +1060,7 @@ h2 {
 .s1 {
   margin: auto;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: img;
   background: url(/images/leather-sofa-wooden-table-living-room-interior-with-plant-concrete-wall-tv-3d-rendering.jpg);
   background-size: cover;
@@ -905,7 +1072,7 @@ h2 {
 .s2 {
   margin: auto;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: img;
   background: url(/images/front-view-white-basket-with-towels.jpg);
   background-size: cover;
@@ -917,7 +1084,7 @@ h2 {
 .s3 {
   margin: auto;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: img;
   background: url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
   background-size: cover;
@@ -929,7 +1096,7 @@ h2 {
 .s4 {
   margin: auto;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: img;
   background: url(/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg);
   background-size: cover;
@@ -964,6 +1131,8 @@ h2 {
 @media all and (min-width: 768px) {
   .services-container {
     padding-bottom: 2em;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .services-heading {
     padding-top: 1em;
@@ -987,6 +1156,9 @@ h2 {
 /* Business Info Container */
 .business-info-section {
   width: 100%;
+  padding: 1em;
   background-color: #f1f1f1;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 /*# sourceMappingURL=main.css.map */
