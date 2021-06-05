@@ -934,8 +934,8 @@ nav {
   padding: 1px;
   width: 50px;
   height: 50px;
-  background: -webkit-gradient(linear, left top, right top, from(#f12711), to(#f5af19));
-  background: linear-gradient(90deg, #f12711, #f5af19);
+  background: -webkit-gradient(linear, left top, right top, from(#dd5e89), to(#f7bb97));
+  background: linear-gradient(90deg, #dd5e89, #f7bb97);
 }
 
 .top-link.show {
@@ -1302,8 +1302,8 @@ h2 {
   width: 100%;
   padding: 1em;
   background-color: #f1f1f1;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/katsia-jazwinska-ZIXIMHafhaE-unsplash.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/katsia-jazwinska-ZIXIMHafhaE-unsplash.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/scandinavian-interior-living-room.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/scandinavian-interior-living-room.jpg);
   background-size: cover;
   background-position: 50% 70%;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -1314,8 +1314,8 @@ h2 {
   .business-info-section {
     width: 100%;
     padding: 1em;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/jason-briscoe-AQl-J19ocWE-unsplash.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/jason-briscoe-AQl-J19ocWE-unsplash.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/sidekix-media-I_QC1JICzA0-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/sidekix-media-I_QC1JICzA0-unsplash.jpg);
     background-size: cover;
     background-position: 50% 70%;
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
