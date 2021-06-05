@@ -134,6 +134,7 @@ h2 {
 /* Services */
 .services-section {
   width: 100%;
+  margin-bottom: 1em;
 }
 .services-container {
   max-width: 1200px;
@@ -272,4 +273,126 @@ h2 {
 .newsletter-section {
   width: 100%;
   padding: 1em;
+}
+/* packages section */
+.packages-section {
+  width: 100%;
+  background-image: url(/images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering\\(
+      1\
+    ).jpg);
+  background-size: cover;
+  background-position: center;
+}
+.packages-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+.packages {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.package-desc {
+  max-height: 300px;
+  max-width: 335px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+  margin-top: 0;
+}
+.package {
+  background-color: #fff;
+  padding: 1em;
+  margin: 0 1em;
+  max-width: 375px;
+  min-height: 350px;
+  border-radius: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  & button {
+    color: $navColor;
+    background-color: #fff;
+  }
+  & ul {
+    margin: 1em;
+  }
+}
+.flex-package {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.packages-heading {
+  text-align: left;
+  margin-bottom: 1em;
+}
+@media all and (max-width: 1200px) {
+  .packages {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .flex-package {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .package {
+    padding: 1em;
+    margin: 1em;
+    max-width: 375px;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    & button {
+      color: $navColor;
+      background-color: #fff;
+    }
+    & ul {
+      margin: 1em;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .packages {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .flex-package {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .package {
+    padding: 1em;
+    margin: 1em;
+    max-width: 375px;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    & button {
+      color: $navColor;
+      background-color: #fff;
+    }
+    & ul {
+      margin: 1em;
+    }
+  }
 }
