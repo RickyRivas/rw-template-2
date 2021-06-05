@@ -201,7 +201,8 @@ h2 {
   padding: 0.5em;
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg, #ece9e6, #ffffff);
+  color: #fff;
+  background: linear-gradient(90deg, $navColor, #eef2f3);
   font-size: 1.1em;
   width: 100%;
   & p {
