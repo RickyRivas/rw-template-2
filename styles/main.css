@@ -600,10 +600,11 @@ nav {
           justify-content: center;
   margin: 0 1em 1em 0;
   border-radius: 50%;
-  padding: 0.25em;
+  padding: 1px;
   width: 50px;
   height: 50px;
-  background-color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#f12711), to(#f5af19));
+  background: linear-gradient(90deg, #f12711, #f5af19);
 }
 
 .top-link.show {
@@ -614,12 +615,6 @@ nav {
 .top-link.hide {
   visibility: hidden;
   opacity: 0;
-}
-
-.top-link svg {
-  fill: #000;
-  width: 24px;
-  height: 12px;
 }
 
 .top-link:hover {
