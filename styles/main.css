@@ -635,7 +635,6 @@ nav {
   padding: 0.5em;
   background: -webkit-gradient(linear, left top, right top, from(#ece9e6), to(#ffffff));
   background: linear-gradient(90deg, #ece9e6, #ffffff);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 .flex-form {
