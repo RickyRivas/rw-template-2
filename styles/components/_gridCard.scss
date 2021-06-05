@@ -80,7 +80,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   & button {
     color: $navColor;
-    border: 1px solid $navColor;
+    background-color: #fff;
   }
 }
 .why-card .why-img {
@@ -109,6 +109,14 @@
       "box"
       "img";
   }
+  & button {
+    color: $navColor;
+    background-color: #fff;
+    border-radius: 2em;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
 }
 /* Business Info Container */
 .business-info-container {
@@ -123,7 +131,11 @@
 
   & button {
     color: $navColor;
-    border: 1px solid $navColor;
+    background-color: #fff;
+    border-radius: 2em;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 }
 #contact {
@@ -153,7 +165,7 @@
   width: 100%;
   font-size: 1.2em;
   padding: 0.5em;
-  background: linear-gradient(90deg, #ece9e6, #ffffff);
+  background: #f7f7f7;
 }
 .flex-form {
   display: flex;
@@ -206,11 +218,6 @@
     margin: auto;
     max-width: 1200px;
     grid-template-areas: "form info";
-
-    & button {
-      color: $navColor;
-      border: 1px solid $navColor;
-    }
   }
   .form {
     width: 100%;
