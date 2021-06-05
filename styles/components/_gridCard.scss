@@ -170,7 +170,7 @@
   width: 100%;
   margin: 0.5em 0;
   & p {
-    margin: 0 1em;
+    margin: 0em 0.5em;
   }
   & span {
     color: $melon;
@@ -226,5 +226,8 @@
       border: 0;
       outline: none;
     }
+  }
+  #contact {
+    padding: 1em;
   }
 }
