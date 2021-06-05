@@ -124,13 +124,13 @@ h2 {
 /* Services */
 .services-section {
   width: 100%;
-  background-color: #f1f1f1;
 }
 .services-container {
   max-width: 1200px;
   margin: auto;
   padding: 1em;
   padding-bottom: 1em;
+  background-color: #f1f1f1;
 }
 .services-heading {
   text-align: center;
@@ -138,9 +138,11 @@ h2 {
 }
 .services-grid {
   width: 100%;
+  max-width: 1000px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: auto;
 }
 .service {
   width: 100%;
@@ -218,17 +220,18 @@ h2 {
   }
   .service-grid {
     width: 100%;
+    max-width: 1000px;
     justify-content: space-around;
     align-items: flex-start;
   }
   .service {
     max-width: 450px;
     height: 275px;
-    margin: 2em;
+    margin: 1em;
   }
 }
 /* Business Info Container */
 .business-info-section {
-}
-.business-info-container {
+  width: 100%;
+  background-color: #f1f1f1;
 }

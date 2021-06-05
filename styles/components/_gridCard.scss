@@ -110,3 +110,18 @@
       "img";
   }
 }
+/* Business Info Container */
+.business-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  background: #f1f1f1;
+  margin: auto;
+  max-width: 1200px;
+  grid-template-areas: "img box";
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  & button {
+    color: $navColor;
+    border: 1px solid $navColor;
+  }
+}
