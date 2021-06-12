@@ -1487,9 +1487,11 @@ h2 {
   position: relative;
   width: 100%;
   height: calc((100vw / 1.8) - 88px);
+  max-height: 500px;
   margin: auto;
   line-height: 1.5;
-  background-image: url(/images/leather-sofa-wooden-table-living-room-interior-with-plant-concrete-wall-tv-3d-rendering.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(/images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg);
   background-position: center;
   background-size: cover;
 }
