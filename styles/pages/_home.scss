@@ -15,25 +15,21 @@
   width: 100%;
   height: calc((100vw / 1.8) - 88px);
   margin: auto;
-
   background-color: white;
   line-height: 1.5;
 }
 .standard-btn {
-  width: 10em;
+  width: 8.8em;
   padding: 1em;
-
   text-align: center;
   border: 1px solid #fff;
   cursor: pointer;
   outline: none;
-  background-color: transparent;
+  background-color: #ffb5a7;
   margin: 1em 0;
   color: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-  border-radius: 2em;
-  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  border: 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -104,10 +100,6 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    & button {
-      color: $navColor;
-      border: 1px solid $navColor;
-    }
   }
   .landing-heading {
     margin-top: 15em;
@@ -315,10 +307,7 @@ h2 {
   border-radius: 1em;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  & button {
-    color: $navColor;
-    background-color: #fff;
-  }
+
   & ul {
     margin: 1em;
   }
@@ -354,10 +343,7 @@ h2 {
     border-radius: 1em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    & button {
-      color: $navColor;
-      background-color: #fff;
-    }
+
     & ul {
       margin: 1em;
     }
@@ -385,10 +371,7 @@ h2 {
     border-radius: 1em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    & button {
-      color: $navColor;
-      background-color: #fff;
-    }
+
     & ul {
       margin: 1em;
     }

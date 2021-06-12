@@ -20,15 +20,6 @@
   max-width: 1200px;
   grid-template-areas: "img box";
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-  & button {
-    color: $navColor;
-    background-color: #fff;
-    border-radius: 2em;
-    border: 1px solid #ebebeb;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  }
 }
 .quote-card .img {
   max-height: 400px;
@@ -83,14 +74,6 @@
   max-width: 1200px;
   grid-template-areas: "box img";
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  & button {
-    color: $navColor;
-    background-color: #fff;
-    border-radius: 2em;
-    border: 1px solid #ebebeb;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  }
 }
 .why-card .why-img {
   max-height: 400px;
@@ -129,15 +112,6 @@
   margin: auto;
   max-width: 1200px;
   grid-template-areas: "form info";
-
-  & button {
-    color: $navColor;
-    background-color: #fff;
-    border-radius: 2em;
-    border: 1px solid #ebebeb;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  }
 }
 #contact {
   padding: 0.5em 1em;
