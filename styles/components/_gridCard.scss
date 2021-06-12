@@ -105,13 +105,11 @@
 /* Business Info Container */
 .business-info-container {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   margin: auto;
   max-width: 1200px;
-  grid-template-areas: "form info";
+  grid-template-areas: "form img";
 }
 #contact {
   padding: 0.5em 1em;
@@ -121,6 +119,7 @@
   max-width: 400px;
   margin: 0 1em;
   background-color: #f1f1f1;
+  grid-area: form;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   & input[type="text"],
@@ -147,54 +146,17 @@
   flex-direction: column;
   margin: 0.5em 0;
 }
-.business-phone,
-.business-email,
-.business-hrs {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  margin: 0.5em 0;
-  & p {
-    margin: 0em 0.5em;
-  }
-  & span {
-    color: $melon;
-    margin: 0 0.5em;
-  }
-  & .hrs-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: center;
-    margin: 1em 0;
-  }
-  & .hrs-headings {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-.business-hrs {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.formtop {
-  font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.9);
-}
 @media all and (max-width: 768px) {
   .business-info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin: auto;
     max-width: 1200px;
-    grid-template-areas: "form info";
+    grid-template-areas:
+      "form"
+      "img";
   }
   .form {
     width: 100%;
@@ -213,17 +175,5 @@
   }
   #contact {
     padding: 1em;
-  }
-  .hrs-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1em;
-    & p {
-      margin: 0.3em 0;
-    }
   }
 }
