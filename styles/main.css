@@ -290,7 +290,7 @@ nav {
     margin: 0;
     position: fixed;
     z-index: 0;
-    width: 60%;
+    width: 80%;
     right: 0px;
     height: 100vh;
     top: 0;
@@ -324,7 +324,7 @@ nav {
     text-align: left;
     color: black;
     margin: 0.3em;
-    width: 100%;
+    width: 90%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   }
   .nav-links li:nth-child(1) {
@@ -1182,10 +1182,10 @@ h2 {
     padding: 0.5em;
     height: 100%;
     position: relative;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/gaelle-marcel-AzodV2D0GLc-unsplash.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/gaelle-marcel-AzodV2D0GLc-unsplash.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg);
     background-size: cover;
-    background-position: 70% 50%;
+    background-position: 50% 0%;
     text-align: center;
     font-size: 0.7em;
     display: -webkit-box;
