@@ -460,10 +460,10 @@ nav {
 .footer .col ul li {
   color: rgba(0, 0, 0, 0.5);
   font-family: inherit;
-  font-weight: bold;
   padding: 5px 0px 5px 0px;
   cursor: pointer;
   transition: 0.2s;
+  font-size: 0.9em;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
 }
