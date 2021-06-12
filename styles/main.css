@@ -750,11 +750,9 @@ nav {
 .form textarea {
   width: 100%;
   padding: 1em;
-  border-radius: 2em;
   border: 0;
+  border-bottom: 1px solid #000;
   outline: none;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .contact-form-heading {
@@ -762,7 +760,7 @@ nav {
   width: 100%;
   font-size: 1.2em;
   padding: 0.5em;
-  background: #f7f7f7;
+  background: #fff;
 }
 
 .flex-form {
@@ -858,6 +856,11 @@ nav {
           align-items: flex-start;
 }
 
+.formtop {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
 @media all and (max-width: 768px) {
   .business-info-container {
     display: -webkit-box;
@@ -890,8 +893,6 @@ nav {
   .form textarea {
     width: 100%;
     padding: 1em;
-    border-radius: 2em;
-    border: 0;
     outline: none;
   }
   #contact {
@@ -1182,8 +1183,8 @@ h2 {
     padding: 0.5em;
     height: 100%;
     position: relative;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/alexpic.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/alexpic.jpg);
     background-size: cover;
     background-position: 50% 0%;
     text-align: center;

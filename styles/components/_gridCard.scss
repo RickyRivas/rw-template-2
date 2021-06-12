@@ -154,11 +154,9 @@
   textarea {
     width: 100%;
     padding: 1em;
-    border-radius: 2em;
     border: 0;
+    border-bottom: 1px solid #000;
     outline: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 }
 .contact-form-heading {
@@ -166,7 +164,7 @@
   width: 100%;
   font-size: 1.2em;
   padding: 0.5em;
-  background: #f7f7f7;
+  background: #fff;
 }
 .flex-form {
   display: flex;
@@ -209,6 +207,10 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+.formtop {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.9);
+}
 @media all and (max-width: 768px) {
   .business-info-container {
     display: flex;
@@ -231,8 +233,7 @@
     textarea {
       width: 100%;
       padding: 1em;
-      border-radius: 2em;
-      border: 0;
+
       outline: none;
     }
   }
