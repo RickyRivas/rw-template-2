@@ -973,17 +973,16 @@ input[type="search"] {
 }
 
 .standard-btn {
-  width: 8.8em;
+  width: 10em;
   padding: 1em;
   text-align: center;
   border: 1px solid #fff;
   cursor: pointer;
   outline: none;
-  background-color: #ffb5a7;
+  background-color: transparent;
   margin: 1em 0;
   color: #fff;
   border-radius: 5px;
-  border: 0;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -991,10 +990,6 @@ input[type="search"] {
 .standard-icon {
   width: 2em;
   height: 2em;
-}
-
-h2 {
-  color: var(--standard-gold);
 }
 
 /* landing */
@@ -1011,7 +1006,7 @@ h2 {
   background-size: cover;
   background-position: center;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 1em;
   background-size: 110% 110%;
   background-position: center center;
   -webkit-animation: shrink 10s infinite alternate;
@@ -1496,22 +1491,6 @@ h2 {
   background-size: cover;
 }
 
-.standard-btn {
-  width: 8.8em;
-  padding: 1em;
-  text-align: center;
-  border: 1px solid #fff;
-  cursor: pointer;
-  outline: none;
-  background-color: #ffb5a7;
-  margin: 1em 0;
-  color: #fff;
-  border-radius: 5px;
-  border: 0;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
 .standard-icon {
   width: 2em;
   height: 2em;
@@ -1675,22 +1654,6 @@ h2 {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
   background-position: center;
   background-size: cover;
-}
-
-.standard-btn {
-  width: 8.8em;
-  padding: 1em;
-  text-align: center;
-  border: 1px solid #fff;
-  cursor: pointer;
-  outline: none;
-  background-color: #ffb5a7;
-  margin: 1em 0;
-  color: #fff;
-  border-radius: 5px;
-  border: 0;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .standard-icon {

@@ -18,21 +18,20 @@
   line-height: 1.5;
 }
 .standard-btn {
-  width: 8.8em;
+  width: 10em;
   padding: 1em;
   text-align: center;
   border: 1px solid #fff;
   cursor: pointer;
   outline: none;
-  background-color: #ffb5a7;
+  background-color: transparent;
   margin: 1em 0;
   color: #fff;
   border-radius: 5px;
-  border: 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-.standard-icon {
+}  
+.standard-icon {  
   width: 2em;
   height: 2em;
 }
@@ -49,7 +48,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 1em;
   background-size: 110% 110%;
   background-position: center center;
   animation: shrink 10s infinite alternate;
