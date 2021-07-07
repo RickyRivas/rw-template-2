@@ -33,7 +33,21 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-
+.landing-btn {
+  width: 10em;
+  padding: 1em;
+  text-align: center;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  margin: 1em 0;
+  color: #000;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: white;
+}
 .standard-icon {
   width: 2em;
   height: 2em;
@@ -59,7 +73,6 @@
   animation: shrink 10s infinite alternate;
   @include flexCenter(column);
   color: #fff;
-
   & .logo-h1 {
     font-size: 3em;
     font-family: 'Rosaline', cursive;
@@ -158,10 +171,6 @@
     height: 100vh;
     background-color: white;
     border: 0;
-
-    & button {
-      color: white;
-    }
   }
 }
 
