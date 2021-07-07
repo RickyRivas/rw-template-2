@@ -67,14 +67,14 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   background-size: 110% 110%;
   background-position: center center;
   animation: shrink 10s infinite alternate;
   @include flexCenter(column);
   color: #fff;
   & .logo-h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: 'Rosaline', cursive;
     padding: 0%;
   }
@@ -146,7 +146,7 @@
 
   .landing-heading {
     position: relative;
-    margin-top: 8em;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

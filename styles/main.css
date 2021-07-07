@@ -1031,7 +1031,7 @@ input[type="search"] {
   background-size: cover;
   background-position: center;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   background-size: 110% 110%;
   background-position: center center;
   -webkit-animation: shrink 10s infinite alternate;
@@ -1053,7 +1053,7 @@ input[type="search"] {
 }
 
 .landing-container .logo-h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   font-family: 'Rosaline', cursive;
   padding: 0%;
 }
@@ -1143,7 +1143,7 @@ input[type="search"] {
   }
   .landing-heading {
     position: relative;
-    margin-top: 8em;
+    margin-top: 10vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
