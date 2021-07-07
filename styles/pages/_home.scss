@@ -227,13 +227,32 @@
         padding: 1em;
         text-align: center;
         background-color: #f1f1f1;
-        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
 
         & *:nth-child(1) {
           font-size: 1.1em;
           font-weight: 500;
           padding: .2em;
         }
+
+        & .service-btn {
+          display: flex;
+          width: auto;
+          justify-content: center;
+          align-items: center;
+        }
+
+        & .service-btn::after {
+          content: url(/images/right.svg);
+          width: 1em;
+          height: 1em;
+          padding-left: .5em;
+        }
+
       }
     }
   }
