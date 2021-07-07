@@ -74,6 +74,7 @@
     &::before {
       content: '-';
       font-size: 2em;
+      margin-right: .2em;
       padding: 0%;
       box-sizing: border-box;
     }
@@ -81,6 +82,7 @@
     &::after {
       content: '-';
       font-size: 2em;
+      margin-left: .2em;
       padding: 0%;
       box-sizing: border-box;
     }
@@ -140,7 +142,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
   }
 }
 

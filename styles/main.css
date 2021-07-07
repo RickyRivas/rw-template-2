@@ -1057,6 +1057,7 @@ input[type="search"] {
 .landing-container p::before {
   content: '-';
   font-size: 2em;
+  margin-right: .2em;
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1065,6 +1066,7 @@ input[type="search"] {
 .landing-container p::after {
   content: '-';
   font-size: 2em;
+  margin-left: .2em;
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
