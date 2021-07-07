@@ -1044,8 +1044,9 @@ input[type="search"] {
 
 .landing-container .logo-h1 {
   font-size: 3.5em;
-  font-family: 'Rosaline', cursive;
   padding: 0%;
+  font-family: 'Rosaline', cursive;
+  font-weight: 100;
 }
 
 .landing-container p {
