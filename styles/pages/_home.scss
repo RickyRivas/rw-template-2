@@ -100,7 +100,14 @@
     align-items: center;
   }
   .landing-heading {
-    margin-top: 15em;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-img{
+    width: 70vw;
   }
 }
 @media all and (max-width: 425px) {
