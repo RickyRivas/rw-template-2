@@ -2,20 +2,11 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 /* Main Container CSS */
-#main-container {
-  position: relative;
-  padding: 0;
-  margin: auto;
-  width: 100%;
-  top: auto;
-}
 
 .landing-section {
   position: relative;
   width: 100%;
   height: calc((100vw / 1.8) - 88px);
-  margin: auto;
-  background-color: white;
   line-height: 1.5;
 }
 
