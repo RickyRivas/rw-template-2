@@ -1220,6 +1220,10 @@ input[type="search"] {
     width: 100%;
     padding: 1em;
   }
+  .services-content-section .services-content-heading {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
 }
 
 @media (min-width: 1000px) {
