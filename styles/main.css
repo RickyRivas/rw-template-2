@@ -439,6 +439,10 @@ nav .is-active {
   background-color: #f1f1f1;
 }
 
+.footer a {
+  color: inherit;
+}
+
 .footer .col {
   height: auto;
   float: left;
