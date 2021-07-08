@@ -1215,5 +1215,16 @@ input[type="search"] {
     position: relative;
     top: 8vh;
   }
+  .services-content-section {
+    max-width: 1200px;
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .services-landing {
+    height: 20vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
