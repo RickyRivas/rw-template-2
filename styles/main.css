@@ -574,7 +574,7 @@ nav .is-active {
       grid-template-areas: "img box";
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  line-height: 1.4em;
+  line-height: 1.8em;
 }
 
 .quote-card .img {
@@ -659,6 +659,7 @@ nav .is-active {
       grid-template-areas: "box img";
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  line-height: 1.8em;
 }
 
 .why-card .why-img {
