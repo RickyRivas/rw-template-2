@@ -1083,7 +1083,7 @@ input[type="search"] {
   }
   .services-heading {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 1em;
   }
   .services {
@@ -1221,8 +1221,8 @@ input[type="search"] {
     padding: 1em;
   }
   .services-content-section .services-content-heading {
-    font-size: 1.5em;
     margin-bottom: 1em;
+    font-size: 1.3em;
   }
 }
 
