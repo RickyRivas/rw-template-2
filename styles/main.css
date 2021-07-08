@@ -1153,6 +1153,20 @@ input[type="search"] {
   }
 }
 
+@media (min-width: 768px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    width: 90%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    -ms-grid-rows: (fr)[2];
+        grid-template-rows: repeat(2, fr);
+    border: 0;
+  }
+}
+
 @media (min-width: 0px) {
   .contact-section {
     width: 100%;
