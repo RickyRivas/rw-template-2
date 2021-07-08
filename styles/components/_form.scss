@@ -1,0 +1,101 @@
+/* Business Info Container */
+.business-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 1200px;
+  grid-template-areas: "form img";
+}
+#contact {
+  padding: 0.5em 1em;
+}
+.form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 1em;
+  background-color: #f1f1f1;
+  grid-area: form;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  & input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 1em;
+    border: 0;
+    border-bottom: 1px solid #000;
+    outline: none;
+  }
+}
+.contact-form-heading {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 0.5em;
+  background: #fff;
+}
+.flex-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0.5em 0;
+}
+@media all and (max-width: 768px) {
+  .business-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    grid-template-areas:
+      "form"
+      "img";
+  }
+  .form {
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    min-height: 450px;
+    & input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 1em;
+
+      outline: none;
+    }
+  }
+  #contact {
+    padding: 1em;
+  }
+}
+/* Business Info Container */
+.business-info-section {
+  width: 100%;
+  padding: 1em;
+  background-color: #f1f1f1;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(/images/scandinavian-interior-living-room.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media all and (max-width: 768px) {
+  .business-info-section {
+    width: 100%;
+    padding: 1em;
+
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url(/images/sidekix-media-I_QC1JICzA0-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+}
