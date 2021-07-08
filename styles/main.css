@@ -1164,6 +1164,7 @@ input[type="search"] {
     -ms-grid-rows: (fr)[2];
         grid-template-rows: repeat(2, fr);
     border: 0;
+    margin: auto;
   }
 }
 
