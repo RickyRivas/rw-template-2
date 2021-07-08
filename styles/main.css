@@ -1188,104 +1188,15 @@ input[type="search"] {
   padding: 1em;
 }
 
-/* Main Container CSS */
-#main-container {
-  position: relative;
-  padding: 0;
-  margin: auto;
-  width: 100%;
-  top: auto;
-}
-
-.s-landing-section {
-  position: relative;
-  width: 100%;
-  height: calc((100vw / 1.8) - 88px);
-  max-height: 500px;
-  margin: auto;
-  line-height: 1.5;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(/images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.standard-icon {
-  width: 2em;
-  height: 2em;
-}
-
-/* landing */
-.s-landing-section {
-  width: 100%;
-}
-
-.s-landing-container {
-  padding: 0.5em;
-  height: 100%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  font-size: 0.7em;
-  background-size: 110% 110%;
-  background-position: center center;
-  -webkit-animation: shrink 10s infinite alternate;
-          animation: shrink 10s infinite alternate;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #fff;
-}
-
-@media (max-width: 991.98px) {
-  .s-landing-section {
-    height: calc(100vw * 1.3);
-  }
-}
-
-@media all and (max-width: 768px) {
-  #main-container {
-    position: relative;
-    padding: 0;
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-  }
-  .s-landing-section {
-    width: 100%;
-    margin: auto;
-    height: 40vh;
-    background-color: white;
-    border: 0;
-  }
-  .s-landing-container {
-    padding: 1em;
-    height: 100%;
-    position: relative;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/121233635_136826254851074_1067771669205706422_n.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    font-size: 0.7em;
+@media (min-width: 0px) {
+  .services-landing {
+    height: 30vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1293,63 +1204,16 @@ input[type="search"] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    color: rgba(0, 0, 0, 0.7);
-    border-bottom: 0;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    align-items: center;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background-size: cover;
+    background-position: center;
   }
-}
-
-@media all and (max-width: 425px) {
-  #main-container {
+  .services-landing > h1 {
+    color: white;
     position: relative;
-    padding: 0;
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
+    top: 8vh;
   }
-  .s-landing-section {
-    width: 100%;
-    margin: auto;
-    height: 40vh;
-    background-color: white;
-    border: 0;
-  }
-}
-
-/* Services Intro */
-.services-intro-section {
-  width: 100%;
-}
-
-.services-intro-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1em;
-  text-align: center;
-}
-
-.services-intro-content {
-  text-align: left;
-  margin-top: 3em;
-  line-height: 1.88;
-}
-
-.services-intro-content ul li {
-  font-size: 0.9em;
-  margin: 0.5em 0;
-  padding: 0 1em;
-}
-
-.services-intro-content ul {
-  padding: 1em;
-}
-
-.services-intro-content h2 {
-  color: #ffb5a7;
 }
 /*# sourceMappingURL=main.css.map */
