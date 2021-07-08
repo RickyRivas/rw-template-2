@@ -1179,85 +1179,77 @@ input[type="search"] {
   .services-container {
     max-width: 1200px;
     margin: auto;
+    padding: 1em;
   }
   .services-heading {
-    text-align: center;
-    padding: 1em;
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 1em;
   }
-  .services-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto, 1fr;
-        grid-template-rows: auto, 1fr;
-    padding: 1em;
-  }
-  .services-grid .service-item {
-    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    width: 100%;
-    height: auto;
-    margin-bottom: .5em;
-    line-height: 1.3em;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-    border-radius: .5em;
-  }
-  .services-grid .service-item .service-img {
-    background-size: cover;
-    background-position: center;
-    height: 10em;
-  }
-  .services-grid .service-item .service-img-1 {
-    background-image: url(/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg);
-  }
-  .services-grid .service-item .service-img-2 {
-    background-image: url(/images/sidekix-media-I_QC1JICzA0-unsplash.jpg);
-  }
-  .services-grid .service-item .service-img-3 {
-    background-image: url(/images/jason-briscoe-AQl-J19ocWE-unsplash.jpg);
-  }
-  .services-grid .service-item .service-img-4 {
-    background-image: url(/images/daiga-ellaby-uooMllXe6gE-unsplash.jpg);
-  }
-  .services-grid .service-item .service-content {
-    padding: 1em;
-    text-align: center;
-    background-color: #f1f1f1;
+  .services {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-left: 1px dotted rgba(0, 0, 0, 0.1);
+  }
+  .services .service-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.2em;
+    line-height: 1.3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: .5em;
+  }
+  .services .service-item .service-img {
+    background-size: cover;
+    background-position: center;
+    width: 2.5em;
+    height: 2.5em;
+    margin-bottom: .5em;
+    margin-left: .5em;
+  }
+  .services .service-item .service-content {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .services-grid .service-item .service-content *:nth-child(1) {
+  .services .service-item .service-content .service-item-top {
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    border-left: 1px solid black;
+    padding-left: .5em;
+  }
+  .services .service-item .service-content *:nth-child(1) {
     font-size: 1.3em;
     font-weight: 500;
     padding: .2em;
   }
-  .services-grid .service-item .service-content .service-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .services .service-item .service-content *:nth-child(3) {
+    padding-left: .5em;
   }
-  .services-grid .service-item .service-content .service-btn::after {
+  .services .service-item .service-content .service-btn::after {
     content: url(/images/right.svg);
     width: 1em;
     height: 1em;
