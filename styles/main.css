@@ -1219,6 +1219,7 @@ input[type="search"] {
     max-width: 1200px;
     width: 100%;
     padding: 1em;
+    margin: auto;
   }
   .services-content-section .services-content-heading {
     margin-bottom: 1em;
@@ -1228,7 +1229,7 @@ input[type="search"] {
 
 @media (min-width: 1000px) {
   .services-landing {
-    height: 20vh;
+    height: 25vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
