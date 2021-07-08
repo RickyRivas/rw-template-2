@@ -1283,7 +1283,14 @@ input[type="search"] {
     white-space: nowrap;
   }
   .about-content-section {
+    padding: 1em;
     width: 100%;
+  }
+  .about-content-section .about-img {
+    width: 100%;
+  }
+  .about-content-section h2 {
+    margin-bottom: 1em;
   }
 }
 

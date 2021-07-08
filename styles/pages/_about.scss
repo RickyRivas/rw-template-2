@@ -19,7 +19,14 @@
     }
   }
   .about-content-section{
+      padding: 1em;
       width: 100%;
+      & .about-img{
+          width: 100%;
+      }
+      & h2{
+          margin-bottom: 1em;
+      }
   }
 }
 @media (min-width: 1000px){
