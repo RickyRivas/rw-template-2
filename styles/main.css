@@ -572,8 +572,8 @@ nav .is-active {
   margin: auto;
   max-width: 1200px;
       grid-template-areas: "img box";
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   line-height: 1.8em;
 }
 
@@ -657,8 +657,8 @@ nav .is-active {
   margin: auto;
   max-width: 1200px;
       grid-template-areas: "box img";
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   line-height: 1.8em;
 }
 
@@ -977,7 +977,7 @@ input[type="search"] {
   width: 10em;
   padding: 1em;
   text-align: center;
-  border: 1px solid #fff;
+  border: 0;
   cursor: pointer;
   outline: none;
   background-color: transparent;
