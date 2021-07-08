@@ -1285,11 +1285,15 @@ input[type="search"] {
   .about-content-section {
     padding: 1em;
     width: 100%;
+    line-height: 1.9em;
   }
   .about-content-section .about-img {
     width: 100%;
   }
   .about-content-section h2 {
+    margin-bottom: 1em;
+  }
+  .about-content-section *:nth-child(3) {
     margin-bottom: 1em;
   }
 }
