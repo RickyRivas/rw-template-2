@@ -910,7 +910,7 @@ input[type="search"] {
     font-family: 'Rosaline', cursive;
     font-size: 1.5em;
     font-weight: 100;
-    padding: 1em;
+    padding: 1ems;
   }
 }
 
@@ -1136,6 +1136,9 @@ input[type="search"] {
     font-size: 1.2em;
     margin-bottom: 1em;
   }
+  .services-heading h2 {
+    white-space: nowrap;
+  }
   .services {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1154,7 +1157,7 @@ input[type="search"] {
   .services .service-item {
     width: 100%;
     height: auto;
-    margin-bottom: 1.2em;
+    margin-bottom: 1.5em;
     line-height: 1.3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1162,12 +1165,28 @@ input[type="search"] {
     border-radius: .5em;
   }
   .services .service-item .service-img {
+    width: 100%;
+    height: 30vh;
+  }
+  .services .service-item .service-img-1 {
+    background: url(/images/sven-brandsma-GZ5cKOgeIB0-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    width: 2.5em;
-    height: 2.5em;
-    margin-bottom: .5em;
-    margin-left: .5em;
+  }
+  .services .service-item .service-img-2 {
+    background: url(/images/front-view-white-basket-with-towels.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .services .service-item .service-img-3 {
+    background: url(/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .services .service-item .service-img-4 {
+    background: url(/images/grocery.jpg);
+    background-size: cover;
+    background-position: center;
   }
   .services .service-item .service-content {
     text-align: left;
@@ -1196,8 +1215,9 @@ input[type="search"] {
     font-weight: 500;
     padding: .2em;
   }
-  .services .service-item .service-content *:nth-child(3) {
+  .services .service-item .service-content *:nth-child(2) {
     padding-left: .5em;
+    margin-bottom: .5em;
   }
   .services .service-item .service-content .service-btn::after {
     content: url(/images/right.svg);
