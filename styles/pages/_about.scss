@@ -40,7 +40,7 @@
     .value-section {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:auto;
+        grid-template-rows: auto;
         grid-gap: 1em;
         padding: 1em;
         place-items: center;
@@ -57,17 +57,18 @@
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             background-color: white;
             white-space: nowrap;
-       background-image: linear-gradient(135deg, rgb(208, 57, 227) 0%, rgb(208, 57, 227) 1%,rgb(218, 94, 219) 1%, rgb(218, 94, 219) 24%,rgb(228, 130, 212) 24%, rgb(228, 130, 212) 30%,rgb(238, 167, 204) 30%, rgb(238, 167, 204) 73%,rgb(248, 203, 196) 73%, rgb(248, 203, 196) 100%),linear-gradient(45deg, rgb(208, 57, 227) 0%, rgb(208, 57, 227) 1%,rgb(218, 94, 219) 1%, rgb(218, 94, 219) 24%,rgb(228, 130, 212) 24%, rgb(228, 130, 212) 30%,rgb(238, 167, 204) 30%, rgb(238, 167, 204) 73%,rgb(248, 203, 196) 73%, rgb(248, 203, 196) 100%),linear-gradient(0deg, rgb(208, 57, 227) 0%, rgb(208, 57, 227) 1%,rgb(218, 94, 219) 1%, rgb(218, 94, 219) 24%,rgb(228, 130, 212) 24%, rgb(228, 130, 212) 30%,rgb(238, 167, 204) 30%, rgb(238, 167, 204) 73%,rgb(248, 203, 196) 73%, rgb(248, 203, 196) 100%),linear-gradient(90deg, rgb(51, 80, 234),rgb(213, 245, 101)); background-blend-mode:overlay,overlay,overlay,normal;}
+            background-image: linear-gradient(157.5deg, rgb(95, 97, 179) 0%, rgb(95, 97, 179) 16%, rgb(115, 120, 184) 16%, rgb(115, 120, 184) 20%, rgb(135, 142, 188) 20%, rgb(135, 142, 188) 32%, rgb(155, 165, 193) 32%, rgb(155, 165, 193) 38%, rgb(175, 187, 198) 38%, rgb(175, 187, 198) 48%, rgb(195, 210, 203) 48%, rgb(195, 210, 203) 51%, rgb(215, 232, 207) 51%, rgb(215, 232, 207) 59%, rgb(235, 255, 212) 59%, rgb(235, 255, 212) 100%), linear-gradient(135deg, rgb(95, 97, 179) 0%, rgb(95, 97, 179) 16%, rgb(115, 120, 184) 16%, rgb(115, 120, 184) 20%, rgb(135, 142, 188) 20%, rgb(135, 142, 188) 32%, rgb(155, 165, 193) 32%, rgb(155, 165, 193) 38%, rgb(175, 187, 198) 38%, rgb(175, 187, 198) 48%, rgb(195, 210, 203) 48%, rgb(195, 210, 203) 51%, rgb(215, 232, 207) 51%, rgb(215, 232, 207) 59%, rgb(235, 255, 212) 59%, rgb(235, 255, 212) 100%), linear-gradient(112.5deg, rgb(95, 97, 179) 0%, rgb(95, 97, 179) 16%, rgb(115, 120, 184) 16%, rgb(115, 120, 184) 20%, rgb(135, 142, 188) 20%, rgb(135, 142, 188) 32%, rgb(155, 165, 193) 32%, rgb(155, 165, 193) 38%, rgb(175, 187, 198) 38%, rgb(175, 187, 198) 48%, rgb(195, 210, 203) 48%, rgb(195, 210, 203) 51%, rgb(215, 232, 207) 51%, rgb(215, 232, 207) 59%, rgb(235, 255, 212) 59%, rgb(235, 255, 212) 100%), linear-gradient(90deg, rgb(236, 151, 145), rgb(201, 243, 43));
+            background-blend-mode: overlay, overlay, overlay, normal;
 
-        & .value-item-img {
-            width: 3em;
-            height: 3em
+            & .value-item-img {
+                width: 3em;
+                height: 3em
+            }
         }
     }
 }
-
-@media (min-width: 1000px) {
-    .about-landing {
-        height: 25vh;
+    @media (min-width: 1000px) {
+        .about-landing {
+            height: 25vh;
+        }
     }
-}

@@ -1328,10 +1328,10 @@ input[type="search"] {
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: white;
     white-space: nowrap;
-    background-image: linear-gradient(135deg, #d039e3 0%, #d039e3 1%, #da5edb 1%, #da5edb 24%, #e482d4 24%, #e482d4 30%, #eea7cc 30%, #eea7cc 73%, #f8cbc4 73%, #f8cbc4 100%), linear-gradient(45deg, #d039e3 0%, #d039e3 1%, #da5edb 1%, #da5edb 24%, #e482d4 24%, #e482d4 30%, #eea7cc 30%, #eea7cc 73%, #f8cbc4 73%, #f8cbc4 100%), linear-gradient(0deg, #d039e3 0%, #d039e3 1%, #da5edb 1%, #da5edb 24%, #e482d4 24%, #e482d4 30%, #eea7cc 30%, #eea7cc 73%, #f8cbc4 73%, #f8cbc4 100%), linear-gradient(90deg, #3350ea, #d5f565);
-    background-blend-mode: overlay,overlay,overlay,normal;
+    background-image: linear-gradient(157.5deg, #5f61b3 0%, #5f61b3 16%, #7378b8 16%, #7378b8 20%, #878ebc 20%, #878ebc 32%, #9ba5c1 32%, #9ba5c1 38%, #afbbc6 38%, #afbbc6 48%, #c3d2cb 48%, #c3d2cb 51%, #d7e8cf 51%, #d7e8cf 59%, #ebffd4 59%, #ebffd4 100%), linear-gradient(135deg, #5f61b3 0%, #5f61b3 16%, #7378b8 16%, #7378b8 20%, #878ebc 20%, #878ebc 32%, #9ba5c1 32%, #9ba5c1 38%, #afbbc6 38%, #afbbc6 48%, #c3d2cb 48%, #c3d2cb 51%, #d7e8cf 51%, #d7e8cf 59%, #ebffd4 59%, #ebffd4 100%), linear-gradient(112.5deg, #5f61b3 0%, #5f61b3 16%, #7378b8 16%, #7378b8 20%, #878ebc 20%, #878ebc 32%, #9ba5c1 32%, #9ba5c1 38%, #afbbc6 38%, #afbbc6 48%, #c3d2cb 48%, #c3d2cb 51%, #d7e8cf 51%, #d7e8cf 59%, #ebffd4 59%, #ebffd4 100%), linear-gradient(90deg, #ec9791, #c9f32b);
+    background-blend-mode: overlay, overlay, overlay, normal;
   }
-  .value-section .value-item-img {
+  .value-section .value-item .value-item-img {
     width: 3em;
     height: 3em;
   }
