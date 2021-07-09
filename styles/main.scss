@@ -15,9 +15,10 @@
 @import "components/fixedButton";
 @import "components/newsletter";
 @import "components/callUsSection";
+@import "components/form";
 
 // 5. Page-specific styles
 @import "pages/home";
 @import "pages/services";
 @import "pages/about";
-
+@import "pages/formPage";
