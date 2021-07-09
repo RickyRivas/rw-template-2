@@ -900,6 +900,9 @@ nav .is-active {
     margin: auto;
     height: 20vh;
   }
+  .newsletter-container .newsletter-heading {
+    margin-right: 1em;
+  }
 }
 
 @media (min-width: 0px) {

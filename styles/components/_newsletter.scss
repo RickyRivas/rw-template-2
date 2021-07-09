@@ -67,5 +67,8 @@ input[type="search"] {
   flex-direction: row;
   margin: auto;
   height: 20vh;
+  & .newsletter-heading{
+    margin-right: 1em;
+  }
 }
 }
