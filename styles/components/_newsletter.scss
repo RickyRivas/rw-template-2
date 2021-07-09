@@ -1,4 +1,5 @@
-.newsletter-section {
+@media (min-width: 0px){
+  .newsletter-section {
   width: 100%;
   padding: 1em;
 }
@@ -11,8 +12,9 @@
   margin: auto;
 }
 .newsletter-heading {
-  text-align: center;
+  text-align: left;
 }
+//
 .nl-form {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   max-width: 500px;
@@ -53,4 +55,16 @@
 input[type="search"] {
   flex-basis: 500px;
   border-radius: 2em;
+}
+}
+@media (min-width: 1000px){
+  .newsletter-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  height: 20vh;
+}
 }
