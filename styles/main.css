@@ -1029,6 +1029,23 @@ nav .is-active {
   }
 }
 
+@media (min-width: 0px) {
+  .rates-section {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+  }
+  .rates-section .rates-heading ul {
+    list-style: circle;
+    padding: 1em;
+  }
+  .rates-section .rates-heading ul li {
+    padding-bottom: .5em;
+  }
+  .rates-section img {
+    width: 100%;
+  }
+}
+
 /* Main Container CSS */
 .landing-section {
   position: relative;
@@ -1476,65 +1493,11 @@ nav .is-active {
     margin-bottom: 1em;
     font-size: 1.3em;
   }
-  .rates-section {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 1em;
-    height: 40vh;
-  }
-  .rates-section .rates-img {
-    width: 100%;
-  }
-  .rates-section .rates-img img {
-    width: 100%;
-  }
-  .rates-section .rates-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
 }
 
 @media (min-width: 1000px) {
   .services-landing {
     height: 25vh;
-  }
-  .rates-section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    height: 20vh;
-  }
-  .rates-section .rates-img {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    height: 18vh;
   }
 }
 

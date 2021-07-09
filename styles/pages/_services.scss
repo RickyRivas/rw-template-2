@@ -17,52 +17,22 @@
       top: 8vh;
     }
   }
-  .services-content-section{
+
+  .services-content-section {
     max-width: 1200px;
     width: 100%;
     padding: 1em;
     margin: auto;
-    & .services-content-heading{
+
+    & .services-content-heading {
       margin-bottom: 1em;
       font-size: 1.3em;
     }
   }
-  //Rates Section
-  .rates-section{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    padding: 1em;
-    height: 40vh;
-    & .rates-img{
-      width: 100%;
-
-      & img{
-        width: 100%;
-      }
-    }
-    & .rates-content{
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  }
 }
-@media (min-width: 1000px){
-  .services-landing{
+
+@media (min-width: 1000px) {
+  .services-landing {
     height: 25vh;
   }
-  .rates-section{
-    flex-direction: row;
-    height: 20vh;
-    &  .rates-img{
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      height: 18vh;
-  }
-}
 }
