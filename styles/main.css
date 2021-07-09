@@ -812,6 +812,7 @@ nav .is-active {
     padding: 1em;
   }
   .newsletter-container {
+    position: relative;
     max-width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1380,9 +1381,10 @@ nav .is-active {
 
 @media (min-width: 1150px) {
   .services {
+    margin-top: 2em !important;
     display: -ms-grid;
     display: grid;
-    width: 100%;
+    width: 80%;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
@@ -1390,12 +1392,31 @@ nav .is-active {
         grid-template-rows: repeat(2, 1fr);
     border: 0;
     margin: auto;
-    margin: 0;
     place-items: center;
   }
   .services .service-item {
     width: 100%;
-    height: 425px;
+    height: 100%;
+  }
+  .services .service-img {
+    width: 100%;
+    height: 200px;
+  }
+  .service-content {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
