@@ -976,17 +976,6 @@ input[type="search"] {
     margin: .5em 0;
     width: 90%;
   }
-  .form .radio-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .form label {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1018,16 +1007,6 @@ input[type="search"] {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .form label .radios .radio-btn[type='input'] {
-    width: 100%;
-    border: 0;
-    border-bottom: 0;
-    border-radius: unset;
-    outline: 0;
-    padding: 0;
-    -webkit-box-shadow: 0;
-            box-shadow: 0;
-  }
   .form label input {
     width: 100%;
     border: 0;
@@ -1038,6 +1017,17 @@ input[type="search"] {
   }
   .form label input:hover {
     border-bottom: 1px solid blue;
+  }
+  .form label .radio-btn[type='input'] {
+    width: 100%;
+    border: 0;
+    border-bottom: 0;
+    border-radius: unset;
+    outline: 0;
+    padding: 0;
+  }
+  .form label .radio-btn[type='input']:hover {
+    border-bottom: 0;
   }
   .form label select {
     width: 100%;
