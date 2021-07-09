@@ -74,6 +74,7 @@
         background-image: repeating-linear-gradient(188deg, hsla(171,0%,87%,0.12) 0px, hsla(171,0%,87%,0.12) 2px,transparent 2px, transparent 5px,hsla(171,0%,87%,0.12) 5px, hsla(171,0%,87%,0.12) 7px,transparent 7px, transparent 9px,hsla(171,0%,87%,0.12) 9px, hsla(171,0%,87%,0.12) 11px),repeating-linear-gradient(162deg, hsla(171,0%,87%,0.12) 0px, hsla(171,0%,87%,0.12) 2px,transparent 2px, transparent 5px,hsla(171,0%,87%,0.12) 5px, hsla(171,0%,87%,0.12) 7px,transparent 7px, transparent 14px,hsla(171,0%,87%,0.12) 14px, hsla(171,0%,87%,0.12) 16px),repeating-linear-gradient(0deg, hsla(171,0%,87%,0.15) 0px, hsla(171,0%,87%,0.15) 0px,transparent 0px, transparent 1px,hsla(171,0%,87%,0.15) 1px, hsla(171,0%,87%,0.15) 4px,transparent 4px, transparent 5px,hsla(171,0%,87%,0.15) 5px, hsla(171,0%,87%,0.15) 8px),repeating-linear-gradient(90deg, hsla(171,0%,87%,0.15) 0px, hsla(171,0%,87%,0.15) 0px,transparent 0px, transparent 1px,hsla(171,0%,87%,0.15) 1px, hsla(171,0%,87%,0.15) 4px,transparent 4px, transparent 5px,hsla(171,0%,87%,0.15) 5px, hsla(171,0%,87%,0.15) 8px),linear-gradient(90deg, rgb(251,251,251),rgb(251,251,251));
 
         & *:nth-child(1) {
+            white-space: nowrap;
             padding: 1em 1em 0 1em;
             text-align: center;
             display: flex;
