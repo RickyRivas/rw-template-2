@@ -1425,8 +1425,7 @@ input[type="search"] {
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     white-space: nowrap;
-    background-image: linear-gradient(90deg, #d1d1d1, #cfcfcf), linear-gradient(45deg, #b1dfce 0%, #b1dfce 46%, #93c0d6 46%, #93c0d6 56%, #75a2de 56%, #75a2de 61%, #5683e5 61%, #5683e5 64%, #3865ed 64%, #3865ed 82%, #1a46f5 82%, #1a46f5 100%), linear-gradient(135deg, #b1dfce 0%, #b1dfce 46%, #93c0d6 46%, #93c0d6 56%, #75a2de 56%, #75a2de 61%, #5683e5 61%, #5683e5 64%, #3865ed 64%, #3865ed 82%, #1a46f5 82%, #1a46f5 100%);
-    background-blend-mode: overlay, overlay, normal;
+    background-color: red;
   }
   .value-section .value-item .value-item-img {
     width: 3em;

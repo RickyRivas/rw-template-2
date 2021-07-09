@@ -59,9 +59,7 @@
             font-size: 1.5em;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             white-space: nowrap;
-            background-image: linear-gradient(90deg, rgb(209, 209, 209), rgb(207, 207, 207)), linear-gradient(45deg, rgb(177, 223, 206) 0%, rgb(177, 223, 206) 46%, rgb(147, 192, 214) 46%, rgb(147, 192, 214) 56%, rgb(117, 162, 222) 56%, rgb(117, 162, 222) 61%, rgb(86, 131, 229) 61%, rgb(86, 131, 229) 64%, rgb(56, 101, 237) 64%, rgb(56, 101, 237) 82%, rgb(26, 70, 245) 82%, rgb(26, 70, 245) 100%), linear-gradient(135deg, rgb(177, 223, 206) 0%, rgb(177, 223, 206) 46%, rgb(147, 192, 214) 46%, rgb(147, 192, 214) 56%, rgb(117, 162, 222) 56%, rgb(117, 162, 222) 61%, rgb(86, 131, 229) 61%, rgb(86, 131, 229) 64%, rgb(56, 101, 237) 64%, rgb(56, 101, 237) 82%, rgb(26, 70, 245) 82%, rgb(26, 70, 245) 100%);
-            background-blend-mode: overlay, overlay, normal;
-
+  background-color: red;
             & .value-item-img {
                 width: 3em;
                 height: 3em
