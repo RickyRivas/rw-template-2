@@ -1231,14 +1231,60 @@ input[type="search"] {
   .services {
     display: -ms-grid;
     display: grid;
-    width: 90%;
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1em;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    border: 0;
+    margin: auto;
+    margin: 0;
+    place-items: center;
+  }
+  .services .service-item {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1em;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    border: 0;
+    margin: auto;
+    margin: 0;
+    place-items: center;
+  }
+  .services .service-item {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
-    -ms-grid-rows: (fr)[2];
-        grid-template-rows: repeat(2, fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
     border: 0;
     margin: auto;
+    margin: 0;
+    place-items: center;
+  }
+  .services .service-item {
+    width: 100%;
+    height: 425px;
   }
 }
 
