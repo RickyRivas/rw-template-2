@@ -1439,6 +1439,11 @@ input[type="search"] {
     padding: 1em 1em 0 1em;
     text-align: center;
   }
+  .follow-section *:nth-child(1) a {
+    padding: 0 .2em 0 0;
+    text-decoration: underline;
+    color: purple;
+  }
   .follow-section img {
     width: 100%;
   }
