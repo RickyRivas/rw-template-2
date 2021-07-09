@@ -1018,17 +1018,6 @@ input[type="search"] {
   .form label input:hover {
     border-bottom: 1px solid blue;
   }
-  .form label .radio-btn[type='input'] {
-    width: 100%;
-    border: 0;
-    border-bottom: 0;
-    border-radius: unset;
-    outline: 0;
-    padding: 0;
-  }
-  .form label .radio-btn[type='input']:hover {
-    border-bottom: 0;
-  }
   .form label select {
     width: 100%;
   }
@@ -1038,6 +1027,10 @@ input[type="search"] {
     border-bottom: 1px solid black;
     outline: 0;
     border-radius: unset;
+    padding: 1em;
+  }
+  .form label textarea:hover {
+    border-bottom: 1px solid blue;
   }
 }
 
