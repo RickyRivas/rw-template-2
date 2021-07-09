@@ -1031,8 +1031,10 @@ nav .is-active {
 
 @media (min-width: 0px) {
   .rates-section {
+    max-width: 1200px;
     width: 100%;
     padding: 0 1em 1em 1em;
+    margin: auto;
   }
   .rates-section .rates-heading ul {
     list-style: circle;
