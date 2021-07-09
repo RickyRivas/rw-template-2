@@ -978,6 +978,10 @@ input[type="search"] {
     width: 100%;
     border: 0;
     border-bottom: 1px solid black;
+    outline: 0;
+  }
+  .form label input:hover {
+    border-bottom: 1px solid blue;
   }
   .form label select {
     width: 100%;
@@ -986,6 +990,7 @@ input[type="search"] {
     width: 100%;
     border: 0;
     border-bottom: 1px solid black;
+    outline: 0;
   }
 }
 
