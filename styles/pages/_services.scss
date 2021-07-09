@@ -27,9 +27,43 @@
       font-size: 1.3em;
     }
   }
+  //Rates Section
+  .rates-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    & .rates-img{
+      width: 100%;
+
+      & img{
+        width: 100%;
+      }
+    }
+    & .rates-content{
+      padding: 0 0 1.5em 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
 }
 @media (min-width: 1000px){
   .services-landing{
     height: 25vh;
   }
+  .rates-section{
+    flex-direction: row;
+    height: 20vh;
+    &  .rates-img{
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 18vh;
+  }
+}
 }
