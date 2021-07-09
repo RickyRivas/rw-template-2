@@ -1108,23 +1108,12 @@ nav .is-active {
   text-align: center;
   font-size: 1.2em;
   background-size: 110% 110%;
-  background-position: center center;
-  -webkit-animation: shrink 10s infinite alternate;
-          animation: shrink 10s infinite alternate;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   color: #fff;
+}
+
+.landing-container .landing-heading {
+  position: relative;
+  top: 13vh;
 }
 
 .landing-container .logo-h1 {
