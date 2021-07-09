@@ -68,6 +68,16 @@
             }
         }
     }
+    & .follow-section{
+        width: 100%;
+        & *:nth-child(1){
+            padding: 1em 1em 0 1em;
+            text-align: center;
+        }
+        & img{
+            width: 100%;
+        }
+    }
 }
 
 @media (min-width: 768px) {

@@ -1432,6 +1432,16 @@ input[type="search"] {
     width: 3em;
     height: 3em;
   }
+  .follow-section {
+    width: 100%;
+  }
+  .follow-section *:nth-child(1) {
+    padding: 1em 1em 0 1em;
+    text-align: center;
+  }
+  .follow-section img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
