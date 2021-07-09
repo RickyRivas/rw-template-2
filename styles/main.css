@@ -937,6 +937,9 @@ input[type="search"] {
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 1em;
   }
+  .form h1 {
+    margin-bottom: 1em;
+  }
   .form > div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -972,13 +975,14 @@ input[type="search"] {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
   }
   .form label input {
     width: 100%;
     border: 0;
     border-bottom: 1px solid black;
     outline: 0;
+    padding: .7em;
   }
   .form label input:hover {
     border-bottom: 1px solid blue;
