@@ -62,9 +62,14 @@
         align-items: flex-start;
         flex-direction: column;
 
-        &>div {
-          display: flex;
-          width: 100%;
+        &> .radios[type='input'] {
+             width: 100%;
+        border: 0;
+        border-bottom: 0;
+        border-radius: unset;
+        outline: 0;
+        padding: 0;
+        box-shadow: 0;
         }
       }
 

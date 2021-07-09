@@ -1018,11 +1018,15 @@ input[type="search"] {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .form label .radios > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .form label .radios > .radios[type='input'] {
     width: 100%;
+    border: 0;
+    border-bottom: 0;
+    border-radius: unset;
+    outline: 0;
+    padding: 0;
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
   }
   .form label input {
     width: 100%;
