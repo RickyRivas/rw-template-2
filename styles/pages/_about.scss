@@ -68,18 +68,26 @@
             }
         }
     }
-    & .follow-section{
+
+    & .follow-section {
         width: 100%;
-        & *:nth-child(1){
+        background-image: repeating-linear-gradient(188deg, hsla(171,0%,87%,0.12) 0px, hsla(171,0%,87%,0.12) 2px,transparent 2px, transparent 5px,hsla(171,0%,87%,0.12) 5px, hsla(171,0%,87%,0.12) 7px,transparent 7px, transparent 9px,hsla(171,0%,87%,0.12) 9px, hsla(171,0%,87%,0.12) 11px),repeating-linear-gradient(162deg, hsla(171,0%,87%,0.12) 0px, hsla(171,0%,87%,0.12) 2px,transparent 2px, transparent 5px,hsla(171,0%,87%,0.12) 5px, hsla(171,0%,87%,0.12) 7px,transparent 7px, transparent 14px,hsla(171,0%,87%,0.12) 14px, hsla(171,0%,87%,0.12) 16px),repeating-linear-gradient(0deg, hsla(171,0%,87%,0.15) 0px, hsla(171,0%,87%,0.15) 0px,transparent 0px, transparent 1px,hsla(171,0%,87%,0.15) 1px, hsla(171,0%,87%,0.15) 4px,transparent 4px, transparent 5px,hsla(171,0%,87%,0.15) 5px, hsla(171,0%,87%,0.15) 8px),repeating-linear-gradient(90deg, hsla(171,0%,87%,0.15) 0px, hsla(171,0%,87%,0.15) 0px,transparent 0px, transparent 1px,hsla(171,0%,87%,0.15) 1px, hsla(171,0%,87%,0.15) 4px,transparent 4px, transparent 5px,hsla(171,0%,87%,0.15) 5px, hsla(171,0%,87%,0.15) 8px),linear-gradient(90deg, rgb(251,251,251),rgb(251,251,251));
+
+        & *:nth-child(1) {
             padding: 1em 1em 0 1em;
             text-align: center;
-            & a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & a {
                 padding: 0 .2em 0 0;
                 text-decoration: underline;
                 color: purple;
             }
         }
-        & img{
+
+        & img {
             width: 100%;
         }
     }
@@ -88,7 +96,7 @@
 @media (min-width: 768px) {
     .value-section {
         display: grid;
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1em;
         padding: 1em;
@@ -103,9 +111,10 @@
     .about-landing {
         height: 25vh;
     }
-        .value-section {
+
+    .value-section {
         display: grid;
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-gap: 1em;
@@ -114,11 +123,34 @@
         max-width: 1200px;
         margin: auto;
     }
+
+    & .follow-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        & *:nth-child(1) {
+            padding: 0;
+            text-align: center;
+
+            & a {
+                padding: 0 .2em 0 0;
+                text-decoration: underline;
+                color: purple;
+            }
+        }
+
+        & img {
+            width: 400px;
+        }
+    }
 }
-@media (min-width: 1300px){
-            .value-section {
+
+@media (min-width: 1300px) {
+    .value-section {
         display: grid;
-        grid-template-columns: repeat(4 , 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         grid-gap: 1em;
         padding: 1em;
