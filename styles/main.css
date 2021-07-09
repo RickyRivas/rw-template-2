@@ -1491,6 +1491,7 @@ nav .is-active {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1em;
+    height: 40vh;
   }
   .rates-section .rates-img {
     width: 100%;
@@ -1499,8 +1500,6 @@ nav .is-active {
     width: 100%;
   }
   .rates-section .rates-content {
-    padding: 0 0 1.5em 0;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -35,6 +35,7 @@
     align-items: center;
     flex-direction: column;
     padding: 1em;
+    height: 40vh;
     & .rates-img{
       width: 100%;
 
@@ -43,8 +44,6 @@
       }
     }
     & .rates-content{
-      padding: 0 0 1.5em 0;
-      height: 100%;
       display: flex;
       justify-content: center;
       align-items: flex-start;
