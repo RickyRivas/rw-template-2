@@ -1018,7 +1018,7 @@ input[type="search"] {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .form label .radios [type='input'] {
+  .form label .radios .radio-btn[type='input'] {
     width: 100%;
     border: 0;
     border-bottom: 0;
