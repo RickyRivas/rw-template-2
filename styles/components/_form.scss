@@ -12,14 +12,16 @@
     align-items: flex-start;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 1em;
-    & h1{
+
+    & h1 {
       margin-bottom: 1em;
     }
 
     &>div {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: column;
       width: 100%;
       height: auto;
     }
@@ -32,6 +34,20 @@
       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
 
+    & .radio-btns {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: .5em 0;
+      width: 90%;
+    }
+
+    & .radio-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     & label {
       display: flex;
       justify-content: space-around;
@@ -40,6 +56,18 @@
       width: 100%;
       margin-bottom: 1em;
 
+      & .radios {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        &>div {
+          display: flex;
+          width: 100%;
+        }
+      }
+
       & input {
         width: 100%;
         border: 0;
@@ -47,7 +75,8 @@
         border-radius: unset;
         outline: 0;
         padding: .7em;
-        &:hover{
+
+        &:hover {
           border-bottom: 1px solid blue;
         }
       }
