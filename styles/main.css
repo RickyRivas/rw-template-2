@@ -976,7 +976,6 @@ input[type="search"] {
   }
   .form label input {
     width: 100%;
-    padding: .5em;
     border: 0;
     border-bottom: 1px solid black;
   }

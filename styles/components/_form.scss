@@ -20,12 +20,13 @@
       width: 100%;
       height: auto;
     }
-    & button{
+
+    & button {
       padding: .5em 2em;
       border: 0;
       background-color: transparent;
       border-radius: .5em;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
 
     & label {
@@ -35,16 +36,18 @@
       align-items: flex-start;
       width: 100%;
       margin-bottom: .5em;
-      & input{
+
+      & input {
         width: 100%;
-        padding: .5em;
         border: 0;
         border-bottom: 1px solid black;
       }
-      & select{
+
+      & select {
         width: 100%;
       }
-      & textarea{
+
+      & textarea {
         width: 100%;
         border: 0;
         border-bottom: 1px solid black;
