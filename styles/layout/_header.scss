@@ -244,17 +244,17 @@ nav {
     font-size: 1.1em;
     text-align: center;
     color: black;
-    margin: 0.3em;
-    width: 75%;
-    border-bottom: 1px solid $navColor;
-
-    &:hover {
-      border-bottom: 1px solid blue;
+    width: 100%;
+    border-bottom: 0;
+    display: flex;
+    &::before{
+      content: url(/images/right-chevron.svg);
+      margin-right: .5em;
+      align-self: center;
+      justify-self: center;
+      width: 1em;
+      height: 1em
     }
-  }
-
-  .nav-links li:nth-child(1) {
-    border-bottom: 1px solid $navColor;
   }
 
   .nav-links li a {

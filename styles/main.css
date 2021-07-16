@@ -326,15 +326,22 @@ nav {
     font-size: 1.1em;
     text-align: center;
     color: black;
-    margin: 0.3em;
-    width: 75%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    width: 100%;
+    border-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .nav-links li:hover {
-    border-bottom: 1px solid blue;
-  }
-  .nav-links li:nth-child(1) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  .nav-links li::before {
+    content: url(/images/right-chevron.svg);
+    margin-right: .5em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 1em;
+    height: 1em;
   }
   .nav-links li a {
     color: rgba(0, 0, 0, 0.7);
