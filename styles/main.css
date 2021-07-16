@@ -287,6 +287,10 @@ nav {
     height: 6vh;
     padding: 0.5em;
   }
+  nav .is-active {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
   .nav-links {
     margin: 0;
     position: fixed;

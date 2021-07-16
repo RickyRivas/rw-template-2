@@ -213,6 +213,10 @@ nav {
     border: 0;
     height: 6vh;
     padding: 0.5em;
+
+    & .is-active {
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
   }
 
   .nav-links {
@@ -230,6 +234,8 @@ nav {
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     background-color: #fff;
+
+
   }
 
   .nav-links li {
@@ -241,6 +247,7 @@ nav {
     margin: 0.3em;
     width: 75%;
     border-bottom: 1px solid $navColor;
+
     &:hover {
       border-bottom: 1px solid blue;
     }
