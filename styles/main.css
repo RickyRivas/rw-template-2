@@ -1910,4 +1910,42 @@ nav {
     height: 25vh;
   }
 }
+
+@media (min-width: 0px) {
+  .blog-section {
+    min-height: 100vh;
+  }
+  .blog-section .blog-container {
+    padding: 1em;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .blog-section .blog-container .blog-heading {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .blog-section .blog-container .blog-heading h2 {
+    font-family: 'Rosaline', cursive;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-section {
+    min-height: 50vh;
+  }
+  .blog-section .blog-container {
+    padding: 1em;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .blog-section .blog-container .blog-heading {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .blog-section .blog-container .blog-heading h2 {
+    font-family: 'Rosaline', cursive;
+  }
+}
 /*# sourceMappingURL=main.css.map */
