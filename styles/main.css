@@ -958,6 +958,35 @@ nav {
   }
 }
 
+@media (min-width: 1024px) {
+  .call-section {
+    width: 100%;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/katsia-jazwinska-ZIXIMHafhaE-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/katsia-jazwinska-ZIXIMHafhaE-unsplash.jpg);
+    background-position: center 70%;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 330px;
+    font-family: 'Rosaline', cursive;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding: 1em;
+  }
+}
+
 @media (min-width: 0px) {
   .form-section {
     width: 100%;
@@ -1764,6 +1793,41 @@ nav {
     place-items: center;
     max-width: 1200px;
     margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .follow-section {
+    width: 100%;
+    background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), -webkit-gradient(linear, left top, right top, from(#fbfbfb), to(#fbfbfb));
+    background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), linear-gradient(90deg, #fbfbfb, #fbfbfb);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 340px;
+  }
+  .follow-section *:nth-child(1) {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .follow-section .iphone-img {
+    width: 330px;
+    height: 330px;
   }
 }
 

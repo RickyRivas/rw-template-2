@@ -17,8 +17,9 @@
         padding: 1ems;
     }
 }
-@media (min-width: 768px){
-       .call-section {
+
+@media (min-width: 768px) {
+    .call-section {
         width: 100%;
         text-align: center;
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
@@ -34,5 +35,25 @@
         font-size: 1.5em;
         font-weight: 100;
         padding: 1em;
-    } 
+    }
+}
+
+@media (min-width: 1024px) {
+    .call-section {
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+            url(/images/katsia-jazwinska-ZIXIMHafhaE-unsplash.jpg);
+        background-position: center 70%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 330px;
+        font-family: 'Rosaline', cursive;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding: 1em;
+    }
 }
