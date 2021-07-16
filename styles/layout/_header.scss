@@ -12,34 +12,40 @@
 body {
   background-color: #fff;
 }
+
 nav {
   z-index: 1000;
   position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6vh;
+  height: 60px;
   width: 100vw;
-
   background-color: transparent;
 }
+
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 50vw;
+  width: auto;
   margin: 1em;
 }
+
 .nav-links li {
   list-style: none;
   padding: 5px;
+  margin: 0 2em;
 }
+
 .nav-links li:nth-child(1) {
   border-bottom: 1px solid #fff;
 }
+
 .nav-links li:hover {
   border-bottom: 1px solid #fff;
 }
+
 .nav-links a {
   text-decoration: none;
   color: #fff;
@@ -48,24 +54,29 @@ nav {
 .hamburger.hamburger--spring {
   display: none;
 }
+
 .logo {
   width: auto;
   margin: 1em;
   font-size: 1.2em;
   font-weight: 100;
   color: #fff;
+
   & a {
     color: $navColor;
     text-decoration: none;
   }
 }
+
 .social-media-icons {
   display: none;
 }
+
 .nav-menu-logo {
   display: none;
   color: #fff;
 }
+
 .nav-icon {
   display: none;
 }
@@ -87,13 +98,16 @@ nav {
   outline: none;
   box-shadow: none;
 }
+
 .hamburger:hover {
   opacity: 0.7;
 }
+
 .hamburger.is-active:hover {
   opacity: 0.7;
   border: none;
 }
+
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
@@ -112,6 +126,7 @@ nav {
   top: 50%;
   margin-top: -2px;
 }
+
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -124,17 +139,21 @@ nav {
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }
+
 .hamburger-inner::before,
 .hamburger-inner::after {
   content: "";
   display: block;
 }
+
 .hamburger-inner::before {
   top: -10px;
 }
+
 .hamburger-inner::after {
   bottom: -10px;
 }
+
 /*
    * Spring
    */
@@ -142,11 +161,13 @@ nav {
   top: 2px;
   transition: background-color 0s 0.13s linear;
 }
+
 .hamburger--spring .hamburger-inner::before {
   top: 10px;
   transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
     transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
 .hamburger--spring .hamburger-inner::after {
   top: 20px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
@@ -157,28 +178,33 @@ nav {
   transition-delay: 0.22s;
   background-color: transparent !important;
 }
+
 .hamburger--spring.is-active .hamburger-inner::before {
   top: 0;
   transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
+
 .hamburger--spring.is-active .hamburger-inner::after {
   top: 0;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
     transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translate3d(0, 10px, 0) rotate(-45deg);
 }
+
 /* media queries */
 @media screen and (max-width: 1024px) {
   body {
     display: block;
     overflow-x: hidden;
   }
+
   .hamburger.hamburger--spring {
-    display: block;  
+    display: block;
     box-shadow: none;
   }
+
   nav {
     position: fixed;
     z-index: 1000;
@@ -192,6 +218,7 @@ nav {
     height: 6vh;
     padding: 0.5em;
   }
+
   .nav-links {
     margin: 0;
     position: fixed;
@@ -208,6 +235,7 @@ nav {
     transition: transform 0.3s ease-in;
     background-color: #fff;
   }
+
   .nav-links li {
     opacity: 0;
     padding: 0.5em 2em;
@@ -218,18 +246,23 @@ nav {
     width: 90%;
     border-bottom: 1px solid $navColor;
   }
+
   .nav-links li:nth-child(1) {
     border-bottom: 1px solid $navColor;
   }
+
   .nav-links li a {
     color: $navColor;
   }
+
   .nav-links li:nth-child(1) {
     margin-top: 3em;
   }
+
   .nav-links li:hover {
     text-decoration: none;
   }
+
   .logo {
     z-index: 100;
     font-weight: 100;
@@ -237,9 +270,11 @@ nav {
     width: auto;
     color: $navColor;
   }
+
   .is-active {
     transform: translateX(0%);
   }
+
   .nav-menu-logo {
     position: absolute;
     width: 100%;
@@ -250,6 +285,7 @@ nav {
     color: #fff;
     margin: auto;
   }
+
   .social-media-icons {
     position: absolute;
     width: 100%;
@@ -260,15 +296,18 @@ nav {
 
     padding: 1em;
   }
+
   .nav-icon {
     display: block;
     width: 2em;
   }
+
   @keyframes navLinkFade {
     from {
       opacity: 0;
       transform: translateX(50px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0px);

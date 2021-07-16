@@ -1,22 +1,5 @@
 @media (min-width: 0px) {
-  .services-landing {
-    height: 30vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background-size: cover;
-    background-position: center;
 
-    &>h1 {
-      color: white;
-      position: relative;
-      top: 8vh;
-    }
-  }
 
   .services-content-section {
     max-width: 1200px;
@@ -28,11 +11,5 @@
       margin-bottom: 1em;
       font-size: 1.3em;
     }
-  }
-}
-
-@media (min-width: 1000px) {
-  .services-landing {
-    height: 25vh;
   }
 }

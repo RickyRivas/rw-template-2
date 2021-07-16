@@ -5,12 +5,14 @@
   align-items: center;
   padding: 1em;
 }
+
 .img {
   width: 100%;
   background: url(/images/kam-idris-_HqHX3LBN18-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
+
 .quote-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,14 +21,16 @@
   margin: auto;
   max-width: 1200px;
   grid-template-areas: "img box";
-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   line-height: 1.8em;
 }
+
 .quote-card .img {
   max-height: 400px;
   grid-area: img;
 }
-.quote-card > div {
+
+.quote-card>div {
   padding: 0.5em;
   height: 100%;
   display: flex;
@@ -36,9 +40,11 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
   grid-area: box;
   height: 400px;
 }
+
 .quote-card:nth-child(even) img {
   order: 2;
 }
+
 @media (max-width: 768px) {
   .quote-card {
     display: grid;
@@ -52,6 +58,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
       "img";
   }
 }
+
 /* why */
 .why-section {
   width: 100%;
@@ -60,12 +67,14 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
   align-items: center;
   padding: 1em;
 }
+
 .why-img {
   width: 100%;
   background: url(/images/sven-brandsma-GZ5cKOgeIB0-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
+
 .why-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -75,13 +84,15 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
   max-width: 1200px;
   grid-template-areas: "box img";
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    line-height: 1.8em;
+  line-height: 1.8em;
 }
+
 .why-card .why-img {
   max-height: 400px;
   grid-area: img;
 }
-.why-card > div {
+
+.why-card>div {
   padding: 0.5em;
   height: 100%;
   display: flex;
@@ -91,6 +102,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
   grid-area: box;
   height: 400px;
 }
+
 @media (max-width: 768px) {
   .why-card {
     display: grid;
