@@ -1,0 +1,43 @@
+@media (min-width: 0px) {
+    .job-section {
+        min-height: 100vh;
+
+        & .job-container {
+            padding: 1em;
+            max-width: 1200px;
+            margin: auto;
+
+            & .job-heading {
+                text-align: center;
+                font-size: 1.5em;
+                color: rgba(0, 0, 0, .6);
+
+                & h2 {
+                    font-family: 'Rosaline', cursive;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .job-section {
+        min-height: 50vh;
+
+        & .job-container {
+            padding: 1em;
+            max-width: 1200px;
+            margin: auto;
+
+            & .job-heading {
+                text-align: center;
+                font-size: 1.5em;
+                color: rgba(0, 0, 0, .6);
+
+                & h2 {
+                    font-family: 'Rosaline', cursive;
+                }
+            }
+        }
+    }
+}
