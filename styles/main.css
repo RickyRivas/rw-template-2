@@ -1690,6 +1690,9 @@ nav {
   .follow-section *:nth-child(1) img {
     margin-right: .5em;
   }
+  .follow-section a {
+    text-decoration: none;
+  }
   .follow-section .iphone-img {
     width: 100%;
   }
