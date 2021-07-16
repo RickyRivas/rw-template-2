@@ -1690,7 +1690,6 @@ nav {
   }
   .follow-section *:nth-child(1) h2 {
     color: purple;
-    text-decoration: underline;
   }
   .follow-section *:nth-child(1) img {
     margin-right: .5em;
