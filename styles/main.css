@@ -1347,6 +1347,35 @@ nav {
   }
 }
 
+@media (min-width: 530px) {
+  .standard-landing {
+    height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/img3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/img3.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+  }
+  .standard-landing > h1 {
+    color: #fff;
+    position: relative;
+    font-size: 1.7em;
+  }
+}
+
 @media (min-width: 1000px) {
   .standard-landing {
     height: 25vh;
