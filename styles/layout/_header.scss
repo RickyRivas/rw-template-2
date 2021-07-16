@@ -42,10 +42,6 @@ nav {
   border-bottom: 1px solid #fff;
 }
 
-.nav-links li:hover {
-  border-bottom: 1px solid #fff;
-}
-
 .nav-links a {
   text-decoration: none;
   color: #fff;
@@ -245,6 +241,9 @@ nav {
     margin: 0.3em;
     width: 90%;
     border-bottom: 1px solid $navColor;
+    &:hover {
+      border-bottom: 1px solid blue;
+    }
   }
 
   .nav-links li:nth-child(1) {
