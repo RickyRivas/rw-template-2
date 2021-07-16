@@ -247,9 +247,11 @@ nav {
     width: 100%;
     border-bottom: 0;
     display: flex;
-    &::before{
-      content: url(/images/right-chevron.svg);
-      margin-right: .5em;
+    justify-content: flex-end;
+    align-items: flex-end;
+    &::after{
+      content: url(/images/left-chevron.svg);
+      margin-left: .5em;
       align-self: center;
       justify-self: center;
       width: 1em;
