@@ -1262,14 +1262,14 @@ nav {
 }
 
 @media (min-width: 0px) {
-  .services-landing {
+  .standard-landing {
     height: 20vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1278,18 +1278,20 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    background: url(/images/img2.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/img3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/img3.jpg);
     background-size: cover;
-    background-position: 50% 100%;
+    background-position: 50% 35%;
   }
-  .services-landing > h1 {
+  .standard-landing > h1 {
+    color: #fff;
     position: relative;
-    top: 8vh;
+    font-size: 1.7em;
   }
 }
 
 @media (min-width: 1000px) {
-  .services-landing {
+  .standard-landing {
     height: 25vh;
   }
 }
