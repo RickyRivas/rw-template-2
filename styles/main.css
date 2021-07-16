@@ -323,7 +323,7 @@ nav {
     text-align: center;
     color: black;
     margin: 0.3em;
-    width: 90%;
+    width: 75%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   }
   .nav-links li:hover {
@@ -1384,9 +1384,6 @@ nav {
     font-size: 1.2em;
     margin-bottom: 1em;
     font-weight: 700;
-  }
-  .services-heading h2 {
-    white-space: nowrap;
   }
   .services {
     display: -webkit-box;
