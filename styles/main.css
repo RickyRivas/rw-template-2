@@ -1050,21 +1050,6 @@ nav {
     height: 100vh;
     line-height: 1.5;
   }
-  .landing-btn {
-    width: 10em;
-    padding: 1em;
-    text-align: center;
-    border: 1px solid #fff;
-    cursor: pointer;
-    outline: none;
-    background-color: transparent;
-    margin: 1em 0;
-    color: #000;
-    border-radius: 5px;
-    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    color: white;
-  }
   .landing-container {
     padding: 0.5em;
     height: 100%;
@@ -1112,6 +1097,21 @@ nav {
     padding: 0%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .landing-btn {
+    width: 10em;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    margin: 1em 0;
+    color: #000;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: white;
   }
 }
 
@@ -1174,6 +1174,7 @@ nav {
     text-align: left;
     font-size: 1.2em;
     margin-bottom: 1em;
+    font-weight: 700;
   }
   .services-heading h2 {
     white-space: nowrap;
@@ -1246,7 +1247,7 @@ nav {
     font-weight: 800;
     font-size: 1.2em;
     margin-bottom: .5em;
-    border-left: 1px solid black;
+    border-left: 1px solid #ff4d6d;
     padding-left: .5em;
   }
   .services .service-item .service-content *:nth-child(1) {
