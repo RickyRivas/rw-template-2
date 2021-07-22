@@ -58,7 +58,6 @@
             text-align: center;
             font-size: 1.5em;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            background-image: repeating-linear-gradient(188deg, hsla(171, 0%, 87%, 0.12) 0px, hsla(171, 0%, 87%, 0.12) 2px, transparent 2px, transparent 5px, hsla(171, 0%, 87%, 0.12) 5px, hsla(171, 0%, 87%, 0.12) 7px, transparent 7px, transparent 9px, hsla(171, 0%, 87%, 0.12) 9px, hsla(171, 0%, 87%, 0.12) 11px), repeating-linear-gradient(162deg, hsla(171, 0%, 87%, 0.12) 0px, hsla(171, 0%, 87%, 0.12) 2px, transparent 2px, transparent 5px, hsla(171, 0%, 87%, 0.12) 5px, hsla(171, 0%, 87%, 0.12) 7px, transparent 7px, transparent 14px, hsla(171, 0%, 87%, 0.12) 14px, hsla(171, 0%, 87%, 0.12) 16px), repeating-linear-gradient(0deg, hsla(171, 0%, 87%, 0.15) 0px, hsla(171, 0%, 87%, 0.15) 0px, transparent 0px, transparent 1px, hsla(171, 0%, 87%, 0.15) 1px, hsla(171, 0%, 87%, 0.15) 4px, transparent 4px, transparent 5px, hsla(171, 0%, 87%, 0.15) 5px, hsla(171, 0%, 87%, 0.15) 8px), repeating-linear-gradient(90deg, hsla(171, 0%, 87%, 0.15) 0px, hsla(171, 0%, 87%, 0.15) 0px, transparent 0px, transparent 1px, hsla(171, 0%, 87%, 0.15) 1px, hsla(171, 0%, 87%, 0.15) 4px, transparent 4px, transparent 5px, hsla(171, 0%, 87%, 0.15) 5px, hsla(171, 0%, 87%, 0.15) 8px), linear-gradient(90deg, rgb(251, 251, 251), rgb(251, 251, 251));
             white-space: nowrap;
 
             & .value-item-img {
@@ -72,6 +71,10 @@
         padding: 2em;
         height: 60vh;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         background-image: repeating-linear-gradient(188deg, hsla(171, 0%, 87%, 0.12) 0px, hsla(171, 0%, 87%, 0.12) 2px, transparent 2px, transparent 5px, hsla(171, 0%, 87%, 0.12) 5px, hsla(171, 0%, 87%, 0.12) 7px, transparent 7px, transparent 9px, hsla(171, 0%, 87%, 0.12) 9px, hsla(171, 0%, 87%, 0.12) 11px), repeating-linear-gradient(162deg, hsla(171, 0%, 87%, 0.12) 0px, hsla(171, 0%, 87%, 0.12) 2px, transparent 2px, transparent 5px, hsla(171, 0%, 87%, 0.12) 5px, hsla(171, 0%, 87%, 0.12) 7px, transparent 7px, transparent 14px, hsla(171, 0%, 87%, 0.12) 14px, hsla(171, 0%, 87%, 0.12) 16px), repeating-linear-gradient(0deg, hsla(171, 0%, 87%, 0.15) 0px, hsla(171, 0%, 87%, 0.15) 0px, transparent 0px, transparent 1px, hsla(171, 0%, 87%, 0.15) 1px, hsla(171, 0%, 87%, 0.15) 4px, transparent 4px, transparent 5px, hsla(171, 0%, 87%, 0.15) 5px, hsla(171, 0%, 87%, 0.15) 8px), repeating-linear-gradient(90deg, hsla(171, 0%, 87%, 0.15) 0px, hsla(171, 0%, 87%, 0.15) 0px, transparent 0px, transparent 1px, hsla(171, 0%, 87%, 0.15) 1px, hsla(171, 0%, 87%, 0.15) 4px, transparent 4px, transparent 5px, hsla(171, 0%, 87%, 0.15) 5px, hsla(171, 0%, 87%, 0.15) 8px), linear-gradient(90deg, rgb(251, 251, 251), rgb(251, 251, 251));
 
         & *:nth-child(1) {

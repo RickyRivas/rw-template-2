@@ -2060,8 +2060,6 @@ html {
     font-size: 1.5em;
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), -webkit-gradient(linear, left top, right top, from(#fbfbfb), to(#fbfbfb));
-    background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), linear-gradient(90deg, #fbfbfb, #fbfbfb);
     white-space: nowrap;
   }
   .value-section .value-item .value-item-img {
@@ -2072,6 +2070,19 @@ html {
     padding: 2em;
     height: 60vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), -webkit-gradient(linear, left top, right top, from(#fbfbfb), to(#fbfbfb));
     background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), linear-gradient(90deg, #fbfbfb, #fbfbfb);
   }
