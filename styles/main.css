@@ -1267,11 +1267,10 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 50vh;
-    font-family: 'Rosaline', cursive;
+    height: 60vh;
     font-size: 1.5em;
     font-weight: 100;
-    padding: 1ems;
+    padding: 1em;
   }
 }
 
@@ -1297,7 +1296,6 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 500px;
-    font-family: 'Rosaline', cursive;
     font-size: 1.5em;
     font-weight: 100;
     padding: 1em;
@@ -1326,7 +1324,6 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 330px;
-    font-family: 'Rosaline', cursive;
     font-size: 1.5em;
     font-weight: 100;
     padding: 1em;
@@ -2072,7 +2069,8 @@ html {
     height: 3em;
   }
   .follow-section {
-    padding: 1em;
+    padding: 2em;
+    height: 60vh;
     width: 100%;
     background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), -webkit-gradient(linear, left top, right top, from(#fbfbfb), to(#fbfbfb));
     background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), linear-gradient(90deg, #fbfbfb, #fbfbfb);
