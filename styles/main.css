@@ -931,7 +931,7 @@ html {
 }
 
 .quote-card > div {
-  padding: 0.5em;
+  padding: 2em;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1016,7 +1016,7 @@ html {
 }
 
 .why-card > div {
-  padding: 0.5em;
+  padding: 2em;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
