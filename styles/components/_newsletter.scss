@@ -36,14 +36,16 @@
         width: 100%;
         max-width: 400px;
         margin-bottom: 1em;
+
         & label {
           margin-bottom: .5em;
         }
 
         & input {
           width: 100%;
-          padding: .5em;
+          padding: 1em;
           outline: none;
+          border-radius: unset;
 
           &:focus,
           :hover {

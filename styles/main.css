@@ -1207,8 +1207,9 @@ html {
   }
   .newsletter-section #mc_embed_signup .mc-field-group input {
     width: 100%;
-    padding: .5em;
+    padding: 1em;
     outline: none;
+    border-radius: unset;
   }
   .newsletter-section #mc_embed_signup .mc-field-group input:focus,
   .newsletter-section #mc_embed_signup .mc-field-group input :hover {
