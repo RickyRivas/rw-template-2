@@ -1430,25 +1430,6 @@ html {
 }
 
 @media (min-width: 0px) {
-  .rates-section {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 1em 1em 1em;
-    margin: auto;
-  }
-  .rates-section .rates-heading ul {
-    list-style: circle;
-    padding: 1em;
-  }
-  .rates-section .rates-heading ul li {
-    padding-bottom: .5em;
-  }
-  .rates-section img {
-    width: 100%;
-  }
-}
-
-@media (min-width: 0px) {
   .landing-section {
     position: relative;
     width: 100%;
