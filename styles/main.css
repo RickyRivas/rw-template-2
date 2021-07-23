@@ -133,7 +133,7 @@ html {
     display: none;
   }
   .nav-links li {
-    opacity: 0;
+    opacity: 1;
     font-size: 1.3em;
     padding: .5em 1em;
     text-align: right;
@@ -364,7 +364,7 @@ html {
     width: auto;
   }
   .nav-links li {
-    opacity: 0;
+    opacity: 1;
     font-size: 1em;
     padding: .5em 1em;
     text-align: right;
@@ -522,7 +522,7 @@ html {
     width: auto;
   }
   .nav-links li {
-    opacity: 0;
+    opacity: 1;
     font-size: 1em;
     padding: .5em 1em;
     text-align: right;
