@@ -61,17 +61,65 @@
 }
 
 @media (min-width: 1000px) {
-  .newsletter-container {
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: auto;
-    height: 20vh;
+  .newsletter-section {
+    width: 100%;
+
+    & .newsletter-container {
+      position: relative;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      place-items: center;
+      padding: 2em;
+    }
 
     & .newsletter-heading {
-      margin-right: 1em;
+      padding: 2em;
     }
+
+    & #mc_embed_signup {
+      width: 100%;
+      max-width: 400px;
+      padding: 0;
+      margin: auto;
+
+      & .button {
+        padding: .5em 1em;
+        border: 0;
+        background-color: transparent;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+
+      & .mc-field-group {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 1em;
+
+        & label {
+          margin-bottom: .5em;
+        }
+
+        & input {
+          width: 100%;
+          padding: 1em;
+          outline: none;
+          border-radius: unset;
+
+          &:focus,
+          :hover {
+            border: 1px solid blue;
+          }
+        }
+      }
+    }
+
+    //
+
   }
 }
