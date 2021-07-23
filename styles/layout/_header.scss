@@ -243,7 +243,7 @@
     align-items: center;
     transform: unset;
     transition: unset;
-    background-color: white;
+    background-color: transparent;
     list-style: none;
     width: auto;
   }
@@ -306,7 +306,9 @@
 }
   .nav-links a {
     text-decoration: none;
-    color: #000;
+  }
+  .nav-links li a {
+    color: white;
   }
 
   .hamburger.hamburger--spring {
