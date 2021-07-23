@@ -1152,11 +1152,7 @@ html {
 }
 
 @media (min-width: 0px) {
-  .newsletter-section {
-    width: 100%;
-    padding: 1em;
-  }
-  .newsletter-container {
+  .newsletter-section .newsletter-container {
     position: relative;
     max-width: 1200px;
     display: -webkit-box;
@@ -1174,55 +1170,49 @@ html {
             flex-direction: column;
     margin: auto;
   }
-  .newsletter-heading {
-    text-align: left;
+  .newsletter-section .newsletter-heading {
+    padding: 2em;
   }
-  .nl-form {
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    max-width: 500px;
-    border-radius: 2em;
+  .newsletter-section #mc_embed_signup {
+    width: 100%;
+    padding: 0 2em 2em 2em;
+    margin: auto;
+  }
+  .newsletter-section #mc_embed_signup .button {
+    padding: .5em 1em;
+    border: 0;
+    background-color: transparent;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .newsletter-section #mc_embed_signup .mc-field-group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    margin: 1em 0;
+    max-width: 400px;
+    margin-bottom: 1em;
   }
-  .nl-form input[type="submit"] {
-    background: #ffb5a7;
-    border: 1px solid #ffb5a7;
-    color: #fff;
-    padding: 0 30px;
-    border-radius: 2em;
-    cursor: pointer;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+  .newsletter-section #mc_embed_signup .mc-field-group label {
+    margin-bottom: .5em;
   }
-  .nl-form input[type="submit"]:hover {
-    background: #d73851;
-    border: 1px solid #d73851;
-    border-radius: 2em;
+  .newsletter-section #mc_embed_signup .mc-field-group input {
+    width: 100%;
+    padding: .5em;
+    outline: none;
   }
-  .nl-form > * {
-    border: 0;
-    padding: 0 0 0 10px;
-    background: #fff;
-    line-height: 50px;
-    font-size: 1rem;
-    border-radius: 0;
-    outline: 0;
-    -webkit-appearance: none;
-  }
-  input[type="search"] {
-    -ms-flex-preferred-size: 500px;
-        flex-basis: 500px;
-    border-radius: 2em;
+  .newsletter-section #mc_embed_signup .mc-field-group input:focus,
+  .newsletter-section #mc_embed_signup .mc-field-group input :hover {
+    border: 1px solid blue;
   }
 }
 
@@ -1950,12 +1940,6 @@ html {
   }
 }
 
-/* Newsletter */
-.newsletter-section {
-  width: 100%;
-  padding: 1em;
-}
-
 @media (min-width: 0px) {
   .services-content-section {
     max-width: 1200px;
@@ -2093,6 +2077,7 @@ html {
   }
   .follow-section .iphone-img {
     width: 100%;
+    max-width: 346px;
   }
 }
 

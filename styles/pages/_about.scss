@@ -90,6 +90,7 @@
 
             & img {
                 margin-right: .5em;
+               
             }
         }
 
@@ -99,6 +100,7 @@
 
         & .iphone-img {
             width: 100%;
+            max-width: 346px;
         }
     }
 }
