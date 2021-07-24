@@ -1771,6 +1771,9 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .confirm-box a {
+    text-decoration: underline;
+  }
 }
 
 /* Main Container CSS */
