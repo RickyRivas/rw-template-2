@@ -1,19 +1,20 @@
 @media (min-width: 0px) {
     .call-section {
         width: 100%;
-        text-align: left;
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-            url(/images/img6.jpg);
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+            url(/images/img8.jpg);
         background-position: center center;
         background-size: cover;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         height: 60vh;
         font-size: 1.5em;
         font-weight: 100;
         padding: 1em;
+        color: white;
     }
 }
 
@@ -21,18 +22,20 @@
     .call-section {
         width: 100%;
         text-align: left;
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-            url(/images/img6.jpg);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+            url(/images/img8.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         height: 500px;
         font-size: 1.5em;
         font-weight: 100;
         padding: 1em;
+        color: white;
     }
 }
 
@@ -40,8 +43,8 @@
     .call-section {
         width: 100%;
         text-align: center;
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-            url(/images/img6.jpg);
+        background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+            url(/images/img8.jpg);
         background-position: center 70%;
         background-size: cover;
         display: flex;
@@ -52,5 +55,6 @@
         font-size: 1.5em;
         font-weight: 100;
         padding: 1em;
+        color: white;
     }
 }
