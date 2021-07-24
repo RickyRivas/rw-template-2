@@ -1,14 +1,14 @@
 @media (min-width: 0px) {
     .call-section {
         width: 100%;
-        text-align: center;
+        text-align: left;
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-            url(/images/katsia-jazwinska-ZIXIMHafhaE-unsplash.jpg);
-        background-position: center;
+            url(/images/img6.jpg);
+        background-position: center center;
         background-size: cover;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
         height: 60vh;
         font-size: 1.5em;
@@ -20,14 +20,14 @@
 @media (min-width: 768px) {
     .call-section {
         width: 100%;
-        text-align: center;
+        text-align: left;
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-            url(/images/katsia-jazwinska-ZIXIMHafhaE-unsplash.jpg);
+            url(/images/img6.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
         height: 500px;
         font-size: 1.5em;
@@ -41,7 +41,7 @@
         width: 100%;
         text-align: center;
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-            url(/images/katsia-jazwinska-ZIXIMHafhaE-unsplash.jpg);
+            url(/images/img6.jpg);
         background-position: center 70%;
         background-size: cover;
         display: flex;
