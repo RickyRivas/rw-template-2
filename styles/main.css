@@ -1904,10 +1904,13 @@ html {
     font-size: 1.3em;
     font-weight: 500;
     padding: .2em;
+    letter-spacing: 1.5px;
   }
   .services .service-item .service-content *:nth-child(2) {
     padding-left: .5em;
     margin-bottom: .5em;
+    letter-spacing: 1.5px;
+    font-weight: 400;
   }
   .services .service-item .service-content .service-btn::after {
     content: url(/images/right.svg);
