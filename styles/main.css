@@ -1212,6 +1212,7 @@ html {
     padding: 1em;
     outline: none;
     border-radius: unset;
+    border: 1px solid black;
   }
   .newsletter-section #mc_embed_signup .mc-field-group input:focus,
   .newsletter-section #mc_embed_signup .mc-field-group input :hover {
@@ -1276,6 +1277,7 @@ html {
     padding: 1em;
     outline: none;
     border-radius: unset;
+    border: 1px solid black;
   }
   .newsletter-section #mc_embed_signup .mc-field-group input:focus,
   .newsletter-section #mc_embed_signup .mc-field-group input :hover {
