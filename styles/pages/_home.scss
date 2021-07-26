@@ -4,7 +4,6 @@
 /* Main Container CSS */
 
 .standard-btn {
-  width: 10em;
   padding: .5em;
   text-align: center;
   border: 0;
@@ -24,7 +23,7 @@
   height: 2em;
 }
 
-/* landing */
+/* landing */   
 @media all and (max-width: 768px) {
   #main-container {
     position: relative;
