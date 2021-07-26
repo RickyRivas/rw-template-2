@@ -1497,6 +1497,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 1em;
   }
   .landing-container p::before {
     content: '-';
@@ -1514,22 +1515,22 @@ html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .landing-btn {
+  a.landing-btn {
     width: 10em;
-    padding: 1em;
+    padding: .7em;
     text-align: center;
     border: 1px solid #fff;
     cursor: pointer;
     outline: none;
     background-color: transparent;
-    margin: 1em 0;
+    text-decoration: none;
     color: #000;
     border-radius: 0px;
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     color: white;
   }
-  .landing-btn:hover {
+  a.landing-btn:hover {
     background-color: white;
     color: black;
   }
@@ -1591,19 +1592,23 @@ html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .landing-btn {
+  a.landing-btn {
     width: 10em;
-    padding: 1em;
+    padding: .7em;
     text-align: center;
     border: 1px solid #fff;
     cursor: pointer;
     outline: none;
-    background-color: white;
-    margin: 1em 0;
+    background-color: transparent;
+    text-decoration: none;
     color: #000;
-    border-radius: 5px;
+    border-radius: 0px;
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: white;
+  }
+  a.landing-btn:hover {
+    background-color: white;
     color: black;
   }
 }
@@ -1665,20 +1670,24 @@ html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .landing-btn {
+  a.landing-btn {
     width: 10em;
-    padding: 1em;
+    padding: .7em;
     text-align: center;
     border: 1px solid #fff;
     cursor: pointer;
     outline: none;
     background-color: transparent;
-    margin: 1em 0;
+    text-decoration: none;
     color: #000;
-    border-radius: 5px;
+    border-radius: 0px;
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     color: white;
+  }
+  a.landing-btn:hover {
+    background-color: white;
+    color: black;
   }
 }
 
@@ -1771,7 +1780,7 @@ html {
 /* Main Container CSS */
 .standard-btn {
   width: 10em;
-  padding: 1em;
+  padding: .5em;
   text-align: center;
   border: 0;
   cursor: pointer;
