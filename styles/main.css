@@ -1463,10 +1463,6 @@ html {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background-size: cover;
-    background-position: 10% 50%;
   }
   .landing-container {
     padding: 0.5em;
@@ -1475,6 +1471,10 @@ html {
     text-align: center;
     line-height: 1.5;
     color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background-size: cover;
+    background-position: 10% 50%;
   }
   .landing-container .landing-heading {
     position: relative;
@@ -1540,10 +1540,6 @@ html {
     position: relative;
     width: 100%;
     height: 786px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background-size: cover;
-    background-position: center top;
   }
   .landing-container {
     padding: 0.5em;
@@ -1552,13 +1548,17 @@ html {
     text-align: center;
     color: #fff;
     line-height: 1.5;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background-size: cover;
+    background-position: center top;
   }
   .landing-container .landing-heading {
     position: relative;
     top: 13vh;
   }
   .landing-container .logo-h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     padding: 0%;
     font-family: 'Rosaline', cursive;
     font-weight: 100;
@@ -1617,11 +1617,7 @@ html {
     position: relative;
     width: 100%;
     height: 786px;
-    overflow: hidden;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background-size: cover;
-    background-position: center;
+    max-width: 100%;
   }
   .landing-container {
     padding: 0.5em;
@@ -1630,13 +1626,17 @@ html {
     text-align: center;
     color: #fff;
     line-height: 1.5;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background-size: cover;
+    background-position: center;
   }
   .landing-container .landing-heading {
     position: relative;
     top: 15vh;
   }
   .landing-container .logo-h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     padding: 0%;
     font-family: 'Rosaline', cursive;
     font-weight: 100;
