@@ -253,7 +253,7 @@
     font-size: 1em;
     padding: .5em 1em;
     text-align: right;
-    font-weight: 300;
+    font-weight: bold;
     color: black;
     width: 100%;
     display: flex;
@@ -389,13 +389,13 @@
     font-size: 1em;
     padding: .5em 1em;
     text-align: right;
-    font-weight: 300;
     color: black;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     opacity: 1;
+    font-weight: bold;
 
     &::after {
       content: '';
