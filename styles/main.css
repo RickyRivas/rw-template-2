@@ -911,7 +911,6 @@ html {
       grid-template-areas: "img box";
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  line-height: 1.3em;
 }
 
 .quote-card .img {
@@ -943,6 +942,7 @@ html {
   -ms-grid-column: 1;
   grid-area: box;
   height: 400px;
+  line-height: 1.5em;
 }
 
 .quote-card:nth-child(even) img {
@@ -999,7 +999,6 @@ html {
       grid-template-areas: "box img";
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  line-height: 1.8em;
 }
 
 .why-card .why-img {
@@ -1028,6 +1027,7 @@ html {
   -ms-grid-column: 1;
   grid-area: box;
   height: 400px;
+  line-height: 1.5em;
 }
 
 @media (max-width: 768px) {
@@ -1915,8 +1915,7 @@ a.standard-btn {
   .services .service-item .service-content *:nth-child(2) {
     padding-left: .5em;
     margin-bottom: .5em;
-    letter-spacing: 1.5px;
-    font-weight: 400;
+    line-height: 1.5em;
   }
   .services .service-item .service-content .service-btn::after {
     content: url(/images/right.svg);
@@ -2143,15 +2142,12 @@ a.standard-btn {
         -ms-flex-align: center;
             align-items: center;
   }
-  .follow-section *:nth-child(1) h2 {
-    color: purple;
-    text-decoration: underline;
-  }
   .follow-section *:nth-child(1) img {
     margin-right: .5em;
   }
   .follow-section a {
     text-decoration: none;
+    color: black;
   }
   .follow-section .iphone-img {
     width: 100%;
@@ -2161,12 +2157,15 @@ a.standard-btn {
 
 @media (min-width: 768px) {
   .value-section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     grid-gap: 1em;
     padding: 1em;
     place-items: center;
@@ -2180,12 +2179,16 @@ a.standard-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     height: 500px;
   }
@@ -2242,6 +2245,10 @@ a.standard-btn {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
     height: 400px;
   }

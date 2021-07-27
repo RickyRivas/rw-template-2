@@ -15,7 +15,6 @@
   max-width: 1200px;
   grid-template-areas: "img box";
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  line-height: 1.3em;
 }
 
 .quote-card .img {
@@ -35,6 +34,7 @@
   flex-direction: column;
   grid-area: box;
   height: 400px;
+  line-height: 1.5em;
 }
 
 .quote-card:nth-child(even) img {
@@ -80,7 +80,6 @@
   max-width: 1200px;
   grid-template-areas: "box img";
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  line-height: 1.8em;
 }
 
 .why-card .why-img {
@@ -97,6 +96,7 @@
   flex-direction: column;
   grid-area: box;
   height: 400px;
+  line-height: 1.5em;
 }
 
 @media (max-width: 768px) {
