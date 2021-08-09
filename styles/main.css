@@ -614,6 +614,7 @@ html {
     padding: 2em;
     background-color: #e9ecef;
     z-index: 4;
+    font-weight: 100;
   }
   .footer .footer-container {
     display: -webkit-box;
@@ -641,7 +642,6 @@ html {
   .footer .col {
     text-align: left;
     margin-bottom: 2em;
-    font-weight: 100;
   }
   .footer .col .logo-footer {
     width: 80px;

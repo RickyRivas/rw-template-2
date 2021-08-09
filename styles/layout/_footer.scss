@@ -6,6 +6,7 @@
     padding: 2em;
     background-color: $light-gray;
     z-index: 4;
+     font-weight: 100;
 
     & .footer-container {
       display: flex;
@@ -26,7 +27,6 @@
     & .col {
       text-align: left;
       margin-bottom: 2em;
-      font-weight: 100;
 
       & .logo-footer {
         width: 80px;
