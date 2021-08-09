@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 /* Roots */
 * {
   margin: 0;
@@ -8,7 +9,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -49,9 +50,9 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1362,32 +1363,53 @@ html {
 }
 
 @media (min-width: 0px) {
-  .landing-section {
+  #landing {
     position: relative;
     width: 100%;
     height: 100vh;
-  }
-  .landing-container {
-    padding: 0.5em;
-    height: 100%;
-    position: relative;
-    text-align: center;
-    line-height: 1.5;
-    color: #fff;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
     background-size: cover;
     background-position: 10% 50%;
+    padding: 1em;
   }
-  .landing-container .landing-heading {
+  .landing-container {
     position: relative;
-    top: 13vh;
+    text-align: center;
+    color: #fff;
+    top: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1;
   }
-  .landing-container .logo-h1 {
-    font-size: 3.5em;
-    padding: 0%;
-    font-family: 'Rosaline', cursive;
-    font-weight: 100;
+  .landing-container span {
+    padding: 0;
+    line-height: unset;
+    font-size: 30px;
+    opacity: .9;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: lighter;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5px;
   }
   .landing-container p {
     display: -webkit-box;
@@ -1399,72 +1421,159 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 1em;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
   }
-  .landing-container p::before {
-    content: '-';
-    font-size: 2em;
-    margin-right: .2em;
-    padding: 0%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .landing-container p::after {
-    content: '-';
-    font-size: 2em;
-    margin-left: .2em;
-    padding: 0%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  a.landing-btn {
-    width: 10em;
-    padding: .7em;
-    text-align: center;
+  .landing-container a {
+    padding: 10px 30px;
     border: 1px solid #fff;
     cursor: pointer;
-    outline: none;
     background-color: transparent;
     text-decoration: none;
     color: #000;
-    border-radius: 0px;
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     color: white;
   }
-  a.landing-btn:hover {
+  .landing-container a:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (min-width: 768px) {
+  #landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background-size: cover;
+    background-position: 10% 50%;
+    padding: 1em;
+  }
+  .landing-container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    top: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    max-width: 504px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1;
+  }
+  .landing-container span {
+    padding: 0;
+    line-height: unset;
+    font-size: 32px;
+    opacity: .9;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: lighter;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5px;
+  }
+  .landing-container p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 43px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .landing-container a {
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: white;
+  }
+  .landing-container a:hover {
     background-color: white;
     color: black;
   }
 }
 
 @media (min-width: 1024px) {
-  .landing-section {
+  #landing {
     position: relative;
     width: 100%;
-    height: 786px;
+    height: 768px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
+    background-size: cover;
+    background-position: 10% 50%;
+    padding: 1em;
   }
   .landing-container {
-    padding: 0.5em;
-    height: 100%;
     position: relative;
     text-align: center;
     color: #fff;
-    line-height: 1.5;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/images/mockup-wall-dark-living-room-interior-background-with-leather-sofa-table-empty-dark-wooden-wall-3d-rendering.jpg);
-    background-size: cover;
-    background-position: center top;
+    top: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    max-width: 504px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1;
   }
-  .landing-container .landing-heading {
+  .landing-container span {
+    padding: 0;
+    line-height: unset;
+    font-size: 32px;
+    opacity: .9;
     position: relative;
-    top: 13vh;
-  }
-  .landing-container .logo-h1 {
-    font-size: 3.5em;
-    padding: 0%;
-    font-family: 'Rosaline', cursive;
-    font-weight: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: lighter;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5px;
   }
   .landing-container p {
     display: -webkit-box;
@@ -1476,118 +1585,22 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 1.5em;
+    font-size: 43px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
   }
-  .landing-container p::before {
-    content: '-';
-    font-size: 2em;
-    margin-right: .2em;
-    padding: 0%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .landing-container p::after {
-    content: '-';
-    font-size: 2em;
-    margin-left: .2em;
-    padding: 0%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  a.landing-btn {
-    width: 10em;
-    padding: .7em;
-    text-align: center;
+  .landing-container a {
+    padding: 10px 30px;
     border: 1px solid #fff;
     cursor: pointer;
-    outline: none;
     background-color: transparent;
     text-decoration: none;
     color: #000;
-    border-radius: 0px;
     -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     color: white;
   }
-  a.landing-btn:hover {
-    background-color: white;
-    color: black;
-  }
-}
-
-@media (min-width: 1250px) {
-  .landing-section {
-    position: relative;
-    width: 100%;
-    height: 700px;
-    max-width: 100%;
-  }
-  .landing-container {
-    padding: 0.5em;
-    height: 100%;
-    position: relative;
-    text-align: center;
-    color: #fff;
-    line-height: 1.5;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/bglanding2.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/bglanding2.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .landing-container .landing-heading {
-    position: relative;
-    top: 15vh;
-  }
-  .landing-container .logo-h1 {
-    font-size: 3em;
-    padding: 0%;
-    font-family: 'Rosaline', cursive;
-    font-weight: 100;
-  }
-  .landing-container p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 1.7em;
-  }
-  .landing-container p::before {
-    content: '-';
-    font-size: 2em;
-    margin-right: .2em;
-    padding: 0%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .landing-container p::after {
-    content: '-';
-    font-size: 2em;
-    margin-left: .2em;
-    padding: 0%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  a.landing-btn {
-    width: 10em;
-    padding: .7em;
-    text-align: center;
-    border: 1px solid #fff;
-    cursor: pointer;
-    outline: none;
-    background-color: transparent;
-    text-decoration: none;
-    color: #000;
-    border-radius: 0px;
-    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    color: white;
-  }
-  a.landing-btn:hover {
+  .landing-container a:hover {
     background-color: white;
     color: black;
   }
