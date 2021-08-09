@@ -127,6 +127,7 @@ html {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    font-size: 1.2em;
   }
   .nav-links li::after {
     content: url(/images/left-chevron.svg);
