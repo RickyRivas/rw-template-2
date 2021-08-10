@@ -1735,7 +1735,7 @@ html {
 
 @media (min-width: 1000px) {
   .standard-landing {
-    height: 25vh;
+    height: 250px;
   }
 }
 
@@ -1785,7 +1785,7 @@ html {
 
 /* Main Container CSS */
 .standard-btn {
-  padding: .5em;
+  padding: 10px 30px;
   text-align: center;
   border: 0;
   cursor: pointer;
@@ -2172,20 +2172,42 @@ html {
 
 @media (min-width: 768px) {
   .value-section {
+    padding: 2em 1em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 1em;
+    place-items: center;
+  }
+  .value-section .value-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    grid-gap: 1em;
-    padding: 1em;
-    place-items: center;
-    max-width: 1200px;
-    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 2em 1em;
+    text-align: center;
+    font-size: 1.5em;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    white-space: nowrap;
+  }
+  .value-section .value-item .value-item-img {
+    width: 3em;
+    height: 3em;
   }
   .follow-section {
     width: 100%;
@@ -2225,17 +2247,12 @@ html {
   }
 }
 
-@media (min-width: 1000px) {
-  .about-landing {
-    height: 25vh;
-  }
+@media (min-width: 1024px) {
   .value-section {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-gap: 1em;
@@ -2244,9 +2261,6 @@ html {
     max-width: 1200px;
     margin: auto;
   }
-}
-
-@media (min-width: 1024px) {
   .follow-section {
     width: 100%;
     background-image: repeating-linear-gradient(188deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 9px, rgba(222, 222, 222, 0.12) 9px, rgba(222, 222, 222, 0.12) 11px), repeating-linear-gradient(162deg, rgba(222, 222, 222, 0.12) 0px, rgba(222, 222, 222, 0.12) 2px, transparent 2px, transparent 5px, rgba(222, 222, 222, 0.12) 5px, rgba(222, 222, 222, 0.12) 7px, transparent 7px, transparent 14px, rgba(222, 222, 222, 0.12) 14px, rgba(222, 222, 222, 0.12) 16px), repeating-linear-gradient(0deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), repeating-linear-gradient(90deg, rgba(222, 222, 222, 0.15) 0px, rgba(222, 222, 222, 0.15) 0px, transparent 0px, transparent 1px, rgba(222, 222, 222, 0.15) 1px, rgba(222, 222, 222, 0.15) 4px, transparent 4px, transparent 5px, rgba(222, 222, 222, 0.15) 5px, rgba(222, 222, 222, 0.15) 8px), -webkit-gradient(linear, left top, right top, from(#fbfbfb), to(#fbfbfb));
@@ -2282,22 +2296,6 @@ html {
   .follow-section .iphone-img {
     width: 330px;
     height: 330px;
-  }
-}
-
-@media (min-width: 1300px) {
-  .value-section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    grid-gap: 1em;
-    padding: 1em;
-    place-items: center;
-    max-width: 1200px;
-    margin: auto;
   }
 }
 

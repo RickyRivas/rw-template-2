@@ -106,14 +106,31 @@
 
 @media (min-width: 768px) {
     .value-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 2em 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto;
         grid-gap: 1em;
-        padding: 1em;
         place-items: center;
-        max-width: 1200px;
-        margin: auto;
+
+        & .value-item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 2em 1em;
+            text-align: center;
+            font-size: 1.5em;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            white-space: nowrap;
+
+            & .value-item-img {
+                width: 3em;
+                height: 3em
+            }
+        }
     }
 
     & .follow-section {
@@ -141,15 +158,10 @@
 
 }
 
-@media (min-width: 1000px) {
-    .about-landing {
-        height: 25vh;
-    }
-
-    .value-section {
+@media (min-width: 1024px) {
+     .value-section {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         grid-gap: 1em;
         padding: 1em;
@@ -157,9 +169,6 @@
         max-width: 1200px;
         margin: auto;
     }
-}
-
-@media (min-width: 1024px) {
     & .follow-section {
         width: 100%;
         background-image: repeating-linear-gradient(188deg, hsla(171, 0%, 87%, 0.12) 0px, hsla(171, 0%, 87%, 0.12) 2px, transparent 2px, transparent 5px, hsla(171, 0%, 87%, 0.12) 5px, hsla(171, 0%, 87%, 0.12) 7px, transparent 7px, transparent 9px, hsla(171, 0%, 87%, 0.12) 9px, hsla(171, 0%, 87%, 0.12) 11px), repeating-linear-gradient(162deg, hsla(171, 0%, 87%, 0.12) 0px, hsla(171, 0%, 87%, 0.12) 2px, transparent 2px, transparent 5px, hsla(171, 0%, 87%, 0.12) 5px, hsla(171, 0%, 87%, 0.12) 7px, transparent 7px, transparent 14px, hsla(171, 0%, 87%, 0.12) 14px, hsla(171, 0%, 87%, 0.12) 16px), repeating-linear-gradient(0deg, hsla(171, 0%, 87%, 0.15) 0px, hsla(171, 0%, 87%, 0.15) 0px, transparent 0px, transparent 1px, hsla(171, 0%, 87%, 0.15) 1px, hsla(171, 0%, 87%, 0.15) 4px, transparent 4px, transparent 5px, hsla(171, 0%, 87%, 0.15) 5px, hsla(171, 0%, 87%, 0.15) 8px), repeating-linear-gradient(90deg, hsla(171, 0%, 87%, 0.15) 0px, hsla(171, 0%, 87%, 0.15) 0px, transparent 0px, transparent 1px, hsla(171, 0%, 87%, 0.15) 1px, hsla(171, 0%, 87%, 0.15) 4px, transparent 4px, transparent 5px, hsla(171, 0%, 87%, 0.15) 5px, hsla(171, 0%, 87%, 0.15) 8px), linear-gradient(90deg, rgb(251, 251, 251), rgb(251, 251, 251));
@@ -181,18 +190,5 @@
             width: 330px;
             height: 330px;
         }
-    }
-}
-
-@media (min-width: 1300px) {
-    .value-section {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        grid-gap: 1em;
-        padding: 1em;
-        place-items: center;
-        max-width: 1200px;
-        margin: auto;
     }
 }
