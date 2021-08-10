@@ -118,6 +118,7 @@ html {
     padding: .5em 1em;
     text-align: right;
     width: 90%;
+    font-weight: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -254,7 +255,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
   }
   nav.scroll {
@@ -298,6 +299,7 @@ html {
     padding: 0 1em;
     text-align: right;
     width: 100%;
+    font-weight: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -308,6 +310,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     opacity: 1;
+    font-size: 1em;
   }
   .nav-links li::after {
     content: '';
@@ -417,6 +420,7 @@ html {
   }
   .nav-links li {
     opacity: 1;
+    font-weight: unset;
     padding: .5em 1em;
     text-align: right;
     color: black;
@@ -424,6 +428,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 1em;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -1754,6 +1759,28 @@ html {
   .confirm-box a {
     text-decoration: underline;
   }
+}
+
+.custom-shape-divider-bottom-1628623431 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1628623431 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 63px;
+}
+
+.custom-shape-divider-bottom-1628623431 .shape-fill {
+  fill: #FFFFFF;
 }
 
 /* Main Container CSS */
