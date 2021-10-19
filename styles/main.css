@@ -1882,7 +1882,6 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2rem;
     text-align: center;
   }
   #review .container h1 {
